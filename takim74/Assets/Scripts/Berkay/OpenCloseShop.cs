@@ -11,14 +11,5 @@ public class OpenCloseShop : MonoBehaviour
     private void Update()
     {
         canvas.SetActive(Physics.CheckSphere(transform.position,15,player));
-
-        if(canvas.activeInHierarchy == true)
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }
-        else
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
     }
 }
