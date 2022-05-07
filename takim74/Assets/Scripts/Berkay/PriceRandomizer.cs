@@ -25,7 +25,6 @@ public class PriceRandomizer : MonoBehaviour
    private void Start()
    {
        inEverySecondsInitialValue = inEverySeconds;
-
    }
 
 
@@ -37,13 +36,14 @@ public class PriceRandomizer : MonoBehaviour
 
        if(inEverySeconds <= 0)
        {    
-            SummItemPriceWithRandomNumberInRange(food, downScale , upScale);
+            ItemPriceRandomizer(food, downScale , upScale);
+            ItemPriceRangeManager(food);
 
             inEverySeconds = inEverySecondsInitialValue;
        }
    }
 
-   private void SummItemPriceWithRandomNumberInRange(Item item,float x1, float x2)
+   private void ItemPriceRandomizer(Item item,float x1, float x2)
    {
         item._price += Random.Range
         (
@@ -51,5 +51,66 @@ public class PriceRandomizer : MonoBehaviour
         , 
         x2 * (food._initialPrice*0.1f) - food._price * 0.05f
         );
+
+        if(item._price <= 0)
+        {
+            item._price = item._initialPrice * 0.01f;
+        }    
    }
+
+   private void ItemPriceRangeManager(Item item)
+   {
+       if(item._price > item._initialPrice * 2f)
+        {
+            downScale = 1.6f;
+
+            upScale = 1;
+        }
+
+        else if(item._price > item._initialPrice * 5f)
+        {
+            downScale = 1.3f;
+
+            upScale = 1f;
+        }
+
+        else if(item._price > item._initialPrice * 1.3f)
+        {
+            downScale = 1.25f;
+
+            upScale = 1.05f;
+        }
+
+        else if(item._price > item._initialPrice * 1.1f)
+        {
+            upScale = 1.1f;
+            downScale = 1.22f;
+        }
+        else if(item._price == item._initialPrice)
+        {
+            upScale = 1.15f;
+            downScale = 1.15f;
+        }
+
+        else if(item._price < item._initialPrice * 0.9f)
+        {
+            upScale = 1.22f;
+
+            downScale = 1.1f;
+        }
+        else if(item._price < item._initialPrice * 0.7f)
+        {
+            upScale = 1.25f;
+
+            downScale = 1.05f;
+        }
+        else if(item._price < item._initialPrice * 0.5f)
+        {
+            upScale = 1.3f;
+
+            downScale = 1f;
+        }
+   }
+
+
 }

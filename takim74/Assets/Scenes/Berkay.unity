@@ -3799,6 +3799,8 @@ MonoBehaviour:
   villageC: {fileID: 11400000, guid: 2c598a337b92ac544bd958451600cf60, type: 2}
   villageD: {fileID: 11400000, guid: bebc481bb082bbf458844eb928199d7f, type: 2}
   inEverySeconds: 0.1
+  downScale: 1
+  upScale: 1
 --- !u!4 &1417716236
 Transform:
   m_ObjectHideFlags: 0
