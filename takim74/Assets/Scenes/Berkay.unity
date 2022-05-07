@@ -3761,6 +3761,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1417716234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1417716236}
+  - component: {fileID: 1417716235}
+  m_Layer: 0
+  m_Name: PriceRandomizer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1417716235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417716234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325954e58f235f448af7c851b59af476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  food: {fileID: 11400000, guid: 11f7a820e3f451948aae3668627e8c29, type: 2}
+  sword: {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
+  armor: {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  potion: {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
+  villageA: {fileID: 11400000, guid: 0bd48930df27dbe4b9590df4603d5f75, type: 2}
+  villageB: {fileID: 11400000, guid: d9f656444eddc9744aa49b3bc86a0e18, type: 2}
+  villageC: {fileID: 11400000, guid: 2c598a337b92ac544bd958451600cf60, type: 2}
+  villageD: {fileID: 11400000, guid: bebc481bb082bbf458844eb928199d7f, type: 2}
+  inEverySeconds: 0.1
+--- !u!4 &1417716236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417716234}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1434951562
 GameObject:
   m_ObjectHideFlags: 0
