@@ -8,4 +8,5 @@ public class PlayerInventory : ScriptableObject
     public Sprite _sprite;
     public float coin;
     public List<Item> items = new List<Item>();
+   
  }

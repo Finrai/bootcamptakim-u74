@@ -6,6 +6,7 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     public float _price;
+    public float _initialPrice;
     public string _name;
     public Sprite _sprite;
 }

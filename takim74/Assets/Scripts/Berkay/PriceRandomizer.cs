@@ -16,36 +16,40 @@ public class PriceRandomizer : MonoBehaviour
    public Village villageC;
    public Village villageD;
 
-
    public float inEverySeconds;
    private float inEverySecondsInitialValue;
+
+   public float downScale;
+   public float upScale;
 
    private void Start()
    {
        inEverySecondsInitialValue = inEverySeconds;
+
    }
 
 
    private void Update()
    {
+       //ControlItemPriceIfTooLowOrHigh(food);
+
        inEverySeconds -= Time.deltaTime;
 
        if(inEverySeconds <= 0)
        {    
-           Debug.Log("randomizer works");
+            SummItemPriceWithRandomNumberInRange(food, downScale , upScale);
 
-           MultipleItemPriceWithRandomNumberInRange(food, -5f , 5f);
-           inEverySeconds = inEverySecondsInitialValue;
+            inEverySeconds = inEverySecondsInitialValue;
        }
    }
 
-   private void MultipleItemPriceWithRandomNumberInRange(Item item,float x1, float x2)
+   private void SummItemPriceWithRandomNumberInRange(Item item,float x1, float x2)
    {
-       item._price += Random.Range(x1,x2);
-
-       
+        item._price += Random.Range
+        (
+        x1 * (-food._initialPrice*0.1f) + food._price * 0.05f
+        , 
+        x2 * (food._initialPrice*0.1f) - food._price * 0.05f
+        );
    }
-
-
-
 }
