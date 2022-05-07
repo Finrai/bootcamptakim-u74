@@ -10,7 +10,7 @@ public class ItemManager : MonoBehaviour
     private Image image;
     private TextMeshProUGUI text;
     private ShopManager shopManager;
-    public float localPrice;
+    [HideInInspector] public float localPrice;
 
     private void Awake()
     {

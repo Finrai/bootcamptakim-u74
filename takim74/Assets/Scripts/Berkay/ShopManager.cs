@@ -13,9 +13,10 @@ public class ShopManager : MonoBehaviour
 
     public void GetSelectedItem()
     {
-        selectedItem = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<ItemManager>();
+        selectedItem = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponentInParent<ItemManager>();
     }
 
+    // buy item
     public bool CheckIfPlayerCoinEnoughToPurchase()
     {
         if(selectedItem != null)
@@ -28,7 +29,7 @@ public class ShopManager : MonoBehaviour
 
         return false;
     }
-    public void CoinManager()
+    public void CoinManagerBuy()
     {
         playerInventory.coin -= selectedItem.localPrice;
     }
@@ -44,8 +45,57 @@ public class ShopManager : MonoBehaviour
 
         if(CheckIfPlayerCoinEnoughToPurchase() == true)
         {
-            CoinManager();
+            CoinManagerBuy();
             AddItemToInventory();
         }
     }
+
+    // sell item
+
+    public bool CheckIfPlayerInventoryHasSelectedItem()
+    {
+        if(selectedItem != null)
+        {
+            for(int i=0; i<playerInventory.items.Count; i++)
+            {
+                if(playerInventory.items[i]._name == selectedItem.itemType._name)
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    public void CoinManagerSell()
+    {
+        playerInventory.coin += selectedItem.localPrice;
+    }
+
+    public void DeleteSelectedItemFromInventory()
+    {
+        for(int i=0; i<playerInventory.items.Count; i++)
+        {
+            if(playerInventory.items[i]._name == selectedItem.itemType._name)
+            {
+                playerInventory.items.RemoveAt(i);
+                break;
+            }
+        }
+    }
+
+    public void SellItem()
+    {
+        GetSelectedItem();
+
+        if(CheckIfPlayerInventoryHasSelectedItem() == true)
+        {
+            CoinManagerSell();
+            DeleteSelectedItemFromInventory();
+        }
+    }
+    
+
+    
 }
