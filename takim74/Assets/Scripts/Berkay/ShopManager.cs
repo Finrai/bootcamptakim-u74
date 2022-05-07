@@ -6,6 +6,7 @@ public class ShopManager : MonoBehaviour
 {
     // item satın al (itemin fiyatını inventorydeki fiyattan düş)
     // itemleri display et
+    // item satma ekle
     public Village village;
     public PlayerInventory playerInventory;
     public  ItemManager selectedItem;
