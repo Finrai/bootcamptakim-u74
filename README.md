@@ -37,7 +37,7 @@ ____________________________________________________________________________
 
  Sprint 1
  ----
-Sprint Notları: User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
+Sprint Notları: Ürünün detaylı anlatımı ve özellikleri için Product backlog ekine ulaşabiliriniz.
 _________________________________________________________________
 Sprint içinde tamamlanması tahmin edilen puan: XXX Puan
 ______________________________________________________________________
@@ -47,6 +47,8 @@ Backlog düzeni: Ürün Backlog'unda oyunun story'lerinin ve özelliklerinin det
 ________________________________________________________
 Daily Scrum: Daily Scrum toplantılarının Discord üzerinden gerçekleştirilmesi kararı alınmıştır. Gerçekleşen toplantılar text ve yayın konuşmaları şeklindedir.
 Dail Scrum görüşmelerinin örneği ektedir.
+[Takim-74.DailyScrumMeetingNotesSprint1.docx](https://github.com/Finrai/bootcamptakim-u74/files/8647096/Takim-74.DailyScrumMeetingNotesSprint1.docx)
+
 ______________________________________________________________
 Ürün Durumu: Ekran görüntüleri:
 ![photo1652015455](https://user-images.githubusercontent.com/95469999/167298064-9a5ddfcd-aa56-4eef-85dd-6ddc8c5bfd6e.jpeg)
@@ -56,6 +58,8 @@ ______________________________________________________________
 ![photo1652015574](https://user-images.githubusercontent.com/95469999/167298069-175abb62-1d61-44a0-bf28-f76771aaa818.jpeg)
 ![photo1652015593](https://user-images.githubusercontent.com/95469999/167298070-f88d0ba5-4a2f-4caa-814a-1e0f259a88c5.jpeg)
 ![photo1652016018](https://user-images.githubusercontent.com/95469999/167298153-973b8db6-64b0-49ee-9869-3f19e080221e.jpeg)
+![photo1652018438](https://user-images.githubusercontent.com/95469999/167299829-4ac60fd4-eff8-493f-8c68-db1ca141ac4f.jpeg)
+
 
 
 __________________________________________________________________
@@ -66,4 +70,4 @@ __________________________________________________________________________
 Sprint Retrospective :
 Takımdaki toplantıların gerçekleştirilmesi ile ilgili yeni kararlar alındı. 
 Görev dağılımları üzerinde düzenlemeler yapıldı.
-Oyunda bulunacak özelliklerin ve tasların puanlanmasının gözden geçirilmesine karar verildi.
+Oyunda bulunacak özelliklerin ve taskların puanlanmasının gözden geçirilmesine karar verildi.
