@@ -5,12 +5,12 @@ Takim-74
 ---------------------------------
 _____________________________________________
 Takım Elemanları
--
-Mertcan Üzer: Product Owner
-Şeyda Nur Kavas: Scrum Master
-Beyza Şişcioğlu: Team Member/Developer
-Barış Can: Team Member/Developer
-Berkay Şahin: Team Member/Developer
+
+- Mertcan Üzer: Product Owner
+- Şeyda Nur Kavas: Scrum Master
+- Beyza Şişcioğlu: Team Member/Developer
+- Barış Can: Team Member/Developer
+- Berkay Şahin: Team Member/Developer
 ___________________________________
 Ürün İsmi :
 Merchant's Coin
@@ -32,8 +32,8 @@ similasyon oyunlarına ilgili,
 keyifli vakit geçirmek isteyen ve her yaştan kişiler
 ____________________________________________________
 Product Backlog URL :
-https://miro.com/app/board/uXjVO2sqe6U=/?share_link_id=689134489862 ///
-[Merchant's Coin.docx](https://github.com/Finrai/bootcamptakim-u74/files/8646988/Merchant.s.Coin.docx)
+- [Miro](https://miro.com/app/board/uXjVO2sqe6U=/?share_link_id=689134489862) 
+- [Merchant's Coin GDD](https://github.com/Finrai/bootcamptakim-u74/files/8646988/Merchant.s.Coin.docx)
 ____________________________________________________________________________
 
  Sprint 1
