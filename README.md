@@ -48,7 +48,9 @@ Backlog düzeni: Ürün Backlog'unda oyunun story'lerinin ve özelliklerinin det
 ________________________________________________________
 Daily Scrum: Daily Scrum toplantılarının Discord üzerinden gerçekleştirilmesi kararı alınmıştır. Gerçekleşen toplantılar text ve yayın konuşmaları şeklindedir.
 Dail Scrum görüşmelerinin örneği ektedir.
-[Takim-74.DailyScrumMeetingNotesSprint1.docx](https://github.com/Finrai/bootcamptakim-u74/files/8647096/Takim-74.DailyScrumMeetingNotesSprint1.docx)
+[Takim-74.DailyScrumMeetingNotesSprint1.docx](https://github.com/Finrai/bootcamptakim-u74/files/8653856/Takim-74.DailyScrumMeetingNotesSprint1.docx)
+
+
 _____________________________________
 Sprint board update: Sprint board screenshotları:
 ![Sprint1 syf1](https://user-images.githubusercontent.com/95469999/167463017-4a2188c0-bd05-4c81-8f68-ca5ecc4ec14e.jpeg)
