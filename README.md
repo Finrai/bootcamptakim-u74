@@ -32,7 +32,7 @@ similasyon oyunlarına ilgili,
 keyifli vakit geçirmek isteyen ve her yaştan kişiler
 ____________________________________________________
 Product Backlog URL :
-https://miro.com/app/board/uXjVO2sqe6U=/?share_link_id=689134489862
+https://miro.com/app/board/uXjVO2sqe6U=/?share_link_id=689134489862 ///
 [Merchant's Coin.docx](https://github.com/Finrai/bootcamptakim-u74/files/8646988/Merchant.s.Coin.docx)
 ____________________________________________________________________________
 
