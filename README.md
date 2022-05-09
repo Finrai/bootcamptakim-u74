@@ -40,9 +40,9 @@ ____________________________________________________________________________
  ----
 Sprint Notları: Ürünün detaylı anlatımı ve özellikleri için Product backlog ekine ulaşabiliriniz.
 _________________________________________________________________
-Sprint içinde tamamlanması tahmin edilen puan: XXX Puan
+Sprint içinde tamamlanması tahmin edilen puan: 81 Puan
 ______________________________________________________________________
-Puan tamamlama mantığı: Toplamda proje boyunca tamamlanması gereken XXX puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından XXX ile başlaması gerektiğine karar verildi.
+Puan tamamlama mantığı: Toplamda proje boyunca tamamlanması gereken 191 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 81 ile başlaması gerektiğine karar verildi.
 _____________________________________________
 Backlog düzeni: Ürün Backlog'unda oyunun story'lerinin ve özelliklerinin detaylı bir şekilde açıklaması bulunmaktadır. Yapılacak tasklar 2D,3D, Ses, Kod ve Animasyon olarak gruplandırılacak belirtilmiştir.
 ________________________________________________________
