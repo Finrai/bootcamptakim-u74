@@ -49,6 +49,12 @@ ________________________________________________________
 Daily Scrum: Daily Scrum toplantılarının Discord üzerinden gerçekleştirilmesi kararı alınmıştır. Gerçekleşen toplantılar text ve yayın konuşmaları şeklindedir.
 Dail Scrum görüşmelerinin örneği ektedir.
 [Takim-74.DailyScrumMeetingNotesSprint1.docx](https://github.com/Finrai/bootcamptakim-u74/files/8647096/Takim-74.DailyScrumMeetingNotesSprint1.docx)
+_____________________________________
+Sprint board update: Sprint board screenshotları:
+![Sprint1 syf1](https://user-images.githubusercontent.com/95469999/167463017-4a2188c0-bd05-4c81-8f68-ca5ecc4ec14e.jpeg)
+![Sprint1 syf2](https://user-images.githubusercontent.com/95469999/167463023-aa06265a-58b1-4e12-9397-c22362c87f43.jpeg)
+![Sprint1 syf3](https://user-images.githubusercontent.com/95469999/167463025-88a00ad5-9abf-4ca6-923b-5d6f2a779b6a.jpg)
+![Sprint1 syf4](https://user-images.githubusercontent.com/95469999/167463028-0810f834-5921-482a-afd1-be41f12114e8.jpg)
 
 ______________________________________________________________
 Ürün Durumu: Ekran görüntüleri:
