@@ -10,21 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2176a2426f8d8ba47ba59e82062506e2, type: 3}
-  m_Name: Inventory
+  m_Name: NPCInventory
   m_EditorClassIdentifier: 
-  _sprite: {fileID: 21300000, guid: 1bf1b4396ea299f45b5d9351524c25bc, type: 3}
-  coin: 48230.01
+  _sprite: {fileID: 0}
+  coin: 170153.02
   items:
-  - {fileID: 11400000, guid: 11f7a820e3f451948aae3668627e8c29, type: 2}
-  - {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
-  - {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
-  - {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
-  - {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
-  - {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
   - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
   - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
   - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
   - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
   - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
   - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  maxSize: 40
+  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  maxSize: 16

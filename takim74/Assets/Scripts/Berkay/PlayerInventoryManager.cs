@@ -71,5 +71,5 @@ public class PlayerInventoryManager : MonoBehaviour
         potionText.text = potionNumber.ToString();
         foodText.text   = foodNumber.ToString();
     }
-    
+   
 }

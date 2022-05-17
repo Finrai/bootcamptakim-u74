@@ -20,12 +20,14 @@ public class ItemManager : MonoBehaviour
     }
     private void Start()
     {
-        image.sprite = itemType._sprite;
+        
     }
     private void Update()
     {
+        image.sprite = itemType._sprite;
+
         localPrice = shopManager.village.CalculatePrice(itemType);
 
-        text.text = itemType._name + " " + localPrice.ToString(); 
+        //text.text = itemType._name + " " + localPrice.ToString(); 
     }   
 }

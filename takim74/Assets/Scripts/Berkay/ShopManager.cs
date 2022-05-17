@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class ShopManager : MonoBehaviour
 {
-    // item satın al (itemin fiyatını inventorydeki fiyattan düş)
-    // itemleri display et
-    // item satma ekle
+    
     public Village village;
     public PlayerInventory playerInventory;
-    public  ItemManager selectedItem;
+    public PlayerInventory NPCInventory;
+    [HideInInspector] public  ItemManager selectedItem;
 
     public void GetSelectedItem()
     {
@@ -17,6 +16,17 @@ public class ShopManager : MonoBehaviour
     }
 
     // buy item
+
+    public bool CheckIfHasEnoughSpace(PlayerInventory inventory)
+    {
+        if(inventory.items.Count >= inventory.maxSize)
+        {
+            return false;
+        }
+
+        return true;
+    }
+
     public bool CheckIfPlayerCoinEnoughToPurchase()
     {
         if(selectedItem != null)
@@ -32,21 +42,35 @@ public class ShopManager : MonoBehaviour
     public void CoinManagerBuy()
     {
         playerInventory.coin -= selectedItem.localPrice;
+        NPCInventory.coin += selectedItem.localPrice;
     }
 
-    public void AddItemToInventory()
+    public void AddItemToPlayerInventory()
     {
         playerInventory.items.Add(selectedItem.itemType);
+    }
+
+    public void DeleteSelectedItemFromNPCInventory()
+    {
+        for(int i=0; i<NPCInventory.items.Count; i++)
+        {
+            if(selectedItem.itemType == NPCInventory.items[i])
+            {
+                NPCInventory.items.RemoveAt(i);
+                return;
+            }
+        }
     }
 
     public void PurchaseItem()
     {
         GetSelectedItem();
 
-        if(CheckIfPlayerCoinEnoughToPurchase() == true)
+        if(CheckIfPlayerCoinEnoughToPurchase() == true && CheckIfHasEnoughSpace(playerInventory))
         {
             CoinManagerBuy();
-            AddItemToInventory();
+            AddItemToPlayerInventory();
+            DeleteSelectedItemFromNPCInventory();
         }
     }
 
@@ -85,14 +109,20 @@ public class ShopManager : MonoBehaviour
         }
     }
 
+    public void AddItemToNPCInventory()
+    {
+        NPCInventory.items.Add(selectedItem.itemType);
+    }
+
     public void SellItem()
     {
         GetSelectedItem();
 
-        if(CheckIfPlayerInventoryHasSelectedItem() == true)
+        if(CheckIfPlayerInventoryHasSelectedItem() == true && CheckIfHasEnoughSpace(NPCInventory))
         {
             CoinManagerSell();
             DeleteSelectedItemFromInventory();
+            AddItemToNPCInventory();
         }
     }
     
