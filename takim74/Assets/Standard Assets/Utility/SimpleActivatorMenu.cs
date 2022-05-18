@@ -33,7 +33,7 @@ namespace UnityStandardAssets.Utility
             }
 
             m_CurrentActiveObject = nextactiveobject;
-           
+            
         }
     }
 }
