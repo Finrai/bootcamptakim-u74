@@ -125,8 +125,8 @@ __________________________________________________________________
 Sprint Review : Oluşturulan oyun parçaları test edilmiş ve sorun görülmemiştir. Kodlama aşamasında tanımlanan bir task'ın daha detaylı ele alınması ve iki farklı iş olarak ayrılması gerektiği farkedilmiş ve üçüncü sprint planında bunu ele almak üzerine karar verilmiştir.
 Takım sprint sonunda elde edilen çıktılardan genel anlamda memnun kalmıştır.
 __________________________________________________________________________
-Sprint Retrospective : İkinci sprintte yer alan görevlerin tamamı yeterli düzeyde tamamlanmıştır. 
-Karşılaşılan Sorunlar
+Sprint Retrospective : İkinci sprintte yer alan görevlerin tamamı yeterli düzeyde tamamlanmıştır.                                                                             
+Karşılaşılan Sorunlar                                                                                                                                                       
 - 3D hayvan modelleme yapılırken anatomi ile alakalı zorluklar yaşanmıştır.
-- 2d IU arayüzü görselleri tasarlandıktan sonra iletişim problemi yüzünden farkedilememiş ve kodlama kısmında sprinti olumsuz etkilemeyecek düzeyde küçü bir aksama gerçekleşmiştir.
--Daha önce tamamlanan bir task üzerinde sorun yaşanmış ve bu sprint içinde çözümlenmeye çalışılmıştır.
+- 2D IU arayüzü görselleri tasarlandıktan sonra iletişim problemi yüzünden farkedilememiş ve kodlama kısmında sprinti olumsuz etkilemeyecek düzeyde küçü bir aksama gerçekleşmiştir.
+- Daha önce tamamlanan bir task üzerinde sorun yaşanmış ve bu sprint içinde çözümlenmeye çalışılmıştır.
