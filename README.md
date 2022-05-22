@@ -80,3 +80,46 @@ Sprint Retrospective :
 Takımdaki toplantıların gerçekleştirilmesi ile ilgili yeni kararlar alındı. 
 Görev dağılımları üzerinde düzenlemeler yapıldı.
 Oyunda bulunacak özelliklerin ve taskların puanlanmasının gözden geçirilmesine karar verildi.
+
+***
+ Sprint 2
+ ----
+Sprint Notları: Ürünün detaylı anlatımı ve özellikleri için Product backlog ekine ulaşabiliriniz.
+_________________________________________________________________
+Sprint içinde tamamlanması tahmin edilen puan: 55 Puan
+______________________________________________________________________
+Puan tamamlama mantığı: Toplamda proje boyunca tamamlanması gereken 191 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 81 ile başlaması gerektiğine karar verilmişti. İş yükü değerlendirilerek, kalan iki siprinte eş bölünmesi ve ikinci sprintin 55 puan ile tamamlanmasına karar verildi. 
+_____________________________________________
+Backlog düzeni: Ürün Backlog'unda oyunun story'lerinin ve özelliklerinin detaylı bir şekilde açıklaması bulunmaktadır. Yapılacak tasklar 2D,3D, Ses, Kod ve Animasyon olarak gruplandırılacak belirtilmiştir.
+________________________________________________________
+Daily Scrum: Daily Scrum toplantılarının Discord üzerinden gerçekleştirilmesi kararı alınmıştır. Gerçekleşen toplantılar text ve yayın konuşmaları şeklindedir.
+Dail Scrum görüşmelerinin örneği ektedir.
+[Takim-74.DailyScrumMeetingNotesSprint2.docx](https://github.com/Finrai/bootcamptakim-u74/files/8749691/Takim-74.DailyScrumMeetingNotesSprint2.docx)
+
+
+
+_____________________________________
+Sprint board update: Sprint board screenshotları:
+![s2 1](https://user-images.githubusercontent.com/95469999/169702125-c8cc4c3b-9bca-41e6-9fa2-b67b39087d4a.jpg)
+![s2 2](https://user-images.githubusercontent.com/95469999/169702130-062d88c8-2841-4e68-a28d-db8c515cfcbe.jpg)
+![s2 3](https://user-images.githubusercontent.com/95469999/169702133-2ee31902-0683-43ad-bde5-bc103ffb91f4.jpg)
+
+
+______________________________________________________________
+Ürün Durumu: Ekran görüntüleri:
+![envanterler](https://user-images.githubusercontent.com/95469999/169702150-1d5329aa-c693-43b6-a5c3-1b07a51b7c6d.png)
+![Kapaliharita](https://user-images.githubusercontent.com/95469999/169702155-28000381-77e0-4c59-9e74-dc9def7babf3.png)
+![UButtonMenu](https://user-images.githubusercontent.com/95469999/169702156-c3ab5882-dbdf-4769-93cf-d7b5e98cd21b.png)
+![unknown (1)](https://user-images.githubusercontent.com/95469999/169702158-43bf94be-0704-49d4-8b3e-06fe434bad42.png)
+![unknown (3)](https://user-images.githubusercontent.com/95469999/169702161-ffd23a8d-8208-4890-a8fb-926b4367097c.png)
+![unknown (4)](https://user-images.githubusercontent.com/95469999/169702162-d93c9b8c-55ae-488b-acee-415129b2716d.png)
+![unknown (5)](https://user-images.githubusercontent.com/95469999/169702163-0172b101-d08c-4272-a884-2f6fde9e9a1e.png)
+![unknown (6)](https://user-images.githubusercontent.com/95469999/169702165-bb0dcad5-0edc-46f1-9f2c-787156f84f81.png)
+![unknown](https://user-images.githubusercontent.com/95469999/169702166-29ae1cf2-63c2-4cd8-a624-d55269d312ab.png)
+
+
+
+__________________________________________________________________
+Sprint Review : 
+__________________________________________________________________________
+Sprint Retrospective :
