@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: 863f4305d295ecd42b8e4fd185cfb6e3
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8716638965922441521
+    second: envanterler_0
+  - first:
+      213: 7564709983680862003
+    second: envanterler_1
+  - first:
+      213: 4353075197320147305
+    second: envanterler_2
+  - first:
+      213: 7738310208873324635
+    second: envanterler_3
+  - first:
+      213: -8649973552697334186
+    second: envanterler_4
+  - first:
+      213: -5793356125861639750
+    second: envanterler_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -125,7 +143,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: envanterler_0
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 2156
+        width: 263
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc65dd01b07480780800000000000000
+      internalID: -8716638965922441521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envanterler_1
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 1734
+        width: 399
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337162e86af3bf860800000000000000
+      internalID: 7564709983680862003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envanterler_2
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 959
+        width: 372
+        height: 722
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961b4d014da396c30800000000000000
+      internalID: 4353075197320147305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envanterler_3
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 175
+        width: 378
+        height: 689
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b506ca9b220046b60800000000000000
+      internalID: 7738310208873324635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envanterler_4
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 118
+        width: 1489
+        height: 2357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656a3f222ee15f780800000000000000
+      internalID: -8649973552697334186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envanterler_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 118
+        width: 1464
+        height: 2361
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab90fac4c4dd99fa0800000000000000
+      internalID: -5793356125861639750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

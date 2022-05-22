@@ -26,7 +26,7 @@ public class PlayerInventoryManager : MonoBehaviour
    
     void Update()
     {
-        coinText.text = "Current Coins: " + playerInventory.coin.ToString();
+        coinText.text = playerInventory.coin.ToString();
 
         GetNumberOfItems();
         DisplayNumberOfItems();
