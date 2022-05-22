@@ -93,8 +93,10 @@ _____________________________________________
 Backlog düzeni: Ürün Backlog'unda oyunun story'lerinin ve özelliklerinin detaylı bir şekilde açıklaması bulunmaktadır. Yapılacak tasklar 2D,3D, Ses, Kod ve Animasyon olarak gruplandırılacak belirtilmiştir.
 ________________________________________________________
 Daily Scrum: Daily Scrum toplantılarının Discord üzerinden gerçekleştirilmesi kararı alınmıştır. Gerçekleşen toplantılar text ve yayın konuşmaları şeklindedir.
-Dail Scrum görüşmelerinin örneği ektedir.
-[Takim-74.DailyScrumMeetingNotesSprint2.docx](https://github.com/Finrai/bootcamptakim-u74/files/8749691/Takim-74.DailyScrumMeetingNotesSprint2.docx)
+Daily Scrum görüşmelerinin örneği ektedir.
+[Takim-74.DailyScrumMeetingNotesSprint2.docx](https://github.com/Finrai/bootcamptakim-u74/files/8749929/Takim-74.DailyScrumMeetingNotesSprint2.docx)
+
+
 
 
 
