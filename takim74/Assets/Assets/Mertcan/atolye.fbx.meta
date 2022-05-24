@@ -3,7 +3,27 @@ guid: 2e9f3bcf44a6cc94e9c891085c0c9fd3
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 3DTreeStump001_HQ-1K_Color
+    second: {fileID: 2800000, guid: fabf0684e02c98347b94863f208ac311, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Planks003_1K_Color
+    second: {fileID: 2800000, guid: 325c088cbb4c9224aab8e99cab30e29a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: WoodFloor041_1K_Color
+    second: {fileID: 2800000, guid: d6ecba8c68fe55642902d6bdf5afb0b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: reed_roof_03_diff_1k
+    second: {fileID: 2800000, guid: dce91de84f575384f92dccfda4d382c8, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

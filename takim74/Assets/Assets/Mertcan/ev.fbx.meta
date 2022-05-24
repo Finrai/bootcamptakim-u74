@@ -3,7 +3,22 @@ guid: 2d87d90630514b14e8502fcb0512ef20
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ImphenziaPalette01-256-Gradient
+    second: {fileID: 2800000, guid: 3224e132a9a272041bfb4769a80dd42b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Planks013_1K_Color
+    second: {fileID: 2800000, guid: 27b35fe5ef56b1f4f8e17570beede210, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: reed_roof_03_diff_1k
+    second: {fileID: 2800000, guid: e732fe0b7a5680349bc25f9b99207481, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

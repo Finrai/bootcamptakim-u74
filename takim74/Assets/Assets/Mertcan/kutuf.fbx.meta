@@ -3,7 +3,12 @@ guid: f956c7e439fdf7c4c91ba076480171cd
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Planks003_1K_Color
+    second: {fileID: 2800000, guid: ffaad8ce75e256848b776cb2b87fe770, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
