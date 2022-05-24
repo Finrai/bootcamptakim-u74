@@ -3,17 +3,7 @@ guid: e21b924690087dd46b1bd3e00824aad1
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: TreeEnd005_1K_Color
-    second: {fileID: 2800000, guid: 7b28478bc71a10149b046e9deb22d27c, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: bark_brown_01_diff_1k
-    second: {fileID: 2800000, guid: 77fd8213e3be8f148aae0f7de3e09763, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
