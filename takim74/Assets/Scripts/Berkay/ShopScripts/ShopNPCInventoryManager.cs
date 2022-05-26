@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCInventoryManager : MonoBehaviour
+public class ShopNPCInventoryManager : MonoBehaviour
 {
     public PlayerInventory NPCInventory;
+
+    private void Awake()
+    {
+        FillParentGameObjectsWithInventoryItems();
+    }
    
     void Update()
     {
@@ -32,7 +37,7 @@ public class NPCInventoryManager : MonoBehaviour
 
         for(int i=0; i< NPCInventory.items.Count; i++)
         {
-            transform.GetChild(i).gameObject.GetComponent<ItemManager>().itemType = NPCInventory.items[i];
+            transform.GetChild(i).gameObject.GetComponent<ShopItemManager>().item = NPCInventory.items[i];
             transform.GetChild(i).gameObject.SetActive(true);
         }
 

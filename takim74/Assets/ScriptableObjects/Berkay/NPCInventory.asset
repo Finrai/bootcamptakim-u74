@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2176a2426f8d8ba47ba59e82062506e2, type: 3}
   m_Name: NPCInventory
   m_EditorClassIdentifier: 
-  _sprite: {fileID: 0}
-  coin: 170153.02
+  coin: 203048.02
+  maxSize: 16
+  maxWeight: 60
   items:
   - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
   - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
@@ -29,4 +30,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
   - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
   - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  maxSize: 16
+  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  currentWeight: 0

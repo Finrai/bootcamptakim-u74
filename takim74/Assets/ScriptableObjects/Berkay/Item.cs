@@ -5,8 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Item", menuName = "Item")]
 public class Item : ScriptableObject
 {
-    public float _price;
+    [HideInInspector]public float _price;
     public float _initialPrice;
+    public float _initialDuration;
+    public float _weight;
+
     public string _name;
     public Sprite _sprite;
 }

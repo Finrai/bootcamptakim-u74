@@ -8,11 +8,11 @@ public class ShopManager : MonoBehaviour
     public Village village;
     public PlayerInventory playerInventory;
     public PlayerInventory NPCInventory;
-    [HideInInspector] public  ItemManager selectedItem;
+    [HideInInspector] public  ShopItemManager selectedItem;
 
     public void GetSelectedItem()
     {
-        selectedItem = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponentInParent<ItemManager>();
+        selectedItem = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponentInParent<ShopItemManager>();
     }
 
     // buy item
@@ -47,14 +47,14 @@ public class ShopManager : MonoBehaviour
 
     public void AddItemToPlayerInventory()
     {
-        playerInventory.items.Add(selectedItem.itemType);
+        playerInventory.items.Add(selectedItem.item);
     }
 
     public void DeleteSelectedItemFromNPCInventory()
     {
         for(int i=0; i<NPCInventory.items.Count; i++)
         {
-            if(selectedItem.itemType == NPCInventory.items[i])
+            if(selectedItem.item == NPCInventory.items[i])
             {
                 NPCInventory.items.RemoveAt(i);
                 return;
@@ -82,7 +82,7 @@ public class ShopManager : MonoBehaviour
         {
             for(int i=0; i<playerInventory.items.Count; i++)
             {
-                if(playerInventory.items[i]._name == selectedItem.itemType._name)
+                if(playerInventory.items[i]._name == selectedItem.item._name)
                 {
                     return true;
                 }
@@ -94,14 +94,15 @@ public class ShopManager : MonoBehaviour
 
     public void CoinManagerSell()
     {
-        playerInventory.coin += selectedItem.localPrice;
+        playerInventory.coin += selectedItem.itemSpecialPrice;
+        NPCInventory.coin -= selectedItem.itemSpecialPrice;
     }
 
     public void DeleteSelectedItemFromInventory()
     {
         for(int i=0; i<playerInventory.items.Count; i++)
         {
-            if(playerInventory.items[i]._name == selectedItem.itemType._name)
+            if(playerInventory.items[i]._name == selectedItem.item._name)
             {
                 playerInventory.items.RemoveAt(i);
                 break;
@@ -111,7 +112,7 @@ public class ShopManager : MonoBehaviour
 
     public void AddItemToNPCInventory()
     {
-        NPCInventory.items.Add(selectedItem.itemType);
+        NPCInventory.items.Add(selectedItem.item);
     }
 
     public void SellItem()

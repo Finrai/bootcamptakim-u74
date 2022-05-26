@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _price: 15
   _initialPrice: 15
+  _initialDuration: 4
+  _leftDuration: -80.20412
+  _weight: 5
   _name: Sword
   _sprite: {fileID: 21300000, guid: 61277062cdfff2d46b4f01838800cfbe, type: 3}

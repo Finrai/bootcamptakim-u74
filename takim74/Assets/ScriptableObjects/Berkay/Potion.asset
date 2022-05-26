@@ -14,5 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _price: 10
   _initialPrice: 10
+  _initialDuration: 8
+  _leftDuration: -320.79288
+  _weight: 8
   _name: Potion
   _sprite: {fileID: 21300000, guid: 883c948bf57b1504cb77965134d9cb8d, type: 3}

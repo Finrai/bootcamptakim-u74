@@ -4,19 +4,28 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ItemManager : MonoBehaviour
+public class ShopItemManager : MonoBehaviour
 {
-    public Item itemType;
+    public Item item;
     private Image image;
     private TextMeshProUGUI text;
     private ShopManager shopManager;
     [HideInInspector] public float localPrice;
+    [HideInInspector] public float itemSpecialPrice;
+
+    private int index;
+
+    
 
     private void Awake()
     {
+        index = transform.GetSiblingIndex();
+
         shopManager = GetComponentInParent<ShopManager>();
         image = GetComponent<Image>();
         text = GetComponentInChildren<TextMeshProUGUI>();
+
+        localPrice = shopManager.village.CalculatePrice(item);
     }
     private void Start()
     {
@@ -24,10 +33,8 @@ public class ItemManager : MonoBehaviour
     }
     private void Update()
     {
-        image.sprite = itemType._sprite;
-
-        localPrice = shopManager.village.CalculatePrice(itemType);
-
-        //text.text = itemType._name + " " + localPrice.ToString(); 
+        image.sprite = item._sprite;
+        
+        localPrice = shopManager.village.CalculatePrice(item);     
     }   
 }
