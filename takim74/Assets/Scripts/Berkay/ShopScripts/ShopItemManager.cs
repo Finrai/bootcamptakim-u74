@@ -11,7 +11,6 @@ public class ShopItemManager : MonoBehaviour
     private TextMeshProUGUI text;
     private ShopManager shopManager;
     [HideInInspector] public float localPrice;
-    [HideInInspector] public float itemSpecialPrice;
 
     private int index;
 
