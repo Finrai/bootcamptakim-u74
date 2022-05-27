@@ -9,10 +9,11 @@ public class ShopItemManager : MonoBehaviour
     public Item item;
     private Image image;
     private ShopManager shopManager;
-    [HideInInspector] public float localPrice;
-
-
+    [HideInInspector] public float localPrice; 
     private int index;
+    public float duration;
+    [HideInInspector] public bool flag;
+   
 
     
 
@@ -30,7 +31,7 @@ public class ShopItemManager : MonoBehaviour
 
     private void Start()
     {
-        
+        localPrice = shopManager.village.CalculatePrice(item);   
     }
 
     private void Update()
@@ -39,7 +40,7 @@ public class ShopItemManager : MonoBehaviour
 
         if(item == null)
         {
-            Debug.Log(transform.name + " is null");
+            
         }
         else
         {
@@ -48,7 +49,5 @@ public class ShopItemManager : MonoBehaviour
                 image.sprite = item._sprite;
             }
         }
-
-        localPrice = shopManager.village.CalculatePrice(item);     
     }   
 }

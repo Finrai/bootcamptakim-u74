@@ -10,6 +10,9 @@ public class ShopManager : MonoBehaviour
     public PlayerInventory NPCInventory;
     [HideInInspector] public  ShopItemManager selectedItem;
 
+    public GameObject playerShopInventory;
+    
+
     public void GetSelectedItem()
     {
         selectedItem = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponentInParent<ShopItemManager>();
@@ -70,6 +73,7 @@ public class ShopManager : MonoBehaviour
         {
             CoinManagerBuy();
             AddItemToPlayerInventory();
+            SetItemDuration();
             DeleteSelectedItemFromNPCInventory();
         }
     }
@@ -117,8 +121,6 @@ public class ShopManager : MonoBehaviour
 
     public void SellItem()
     {
-        Debug.Log("clicked button");
-
         GetSelectedItem();
 
         if(CheckIfPlayerInventoryHasSelectedItem() == true && CheckIfHasEnoughSpace(NPCInventory))
@@ -128,7 +130,12 @@ public class ShopManager : MonoBehaviour
             AddItemToNPCInventory();
         }
     }
-    
 
+    public void SetItemDuration()
+    {
+        playerShopInventory.transform.GetChild(playerInventory.items.Count -1).GetComponent<ShopItemManager>().duration 
+
+        = playerInventory.items[playerInventory.items.Count -1 ]._initialDuration;
+    }
     
 }

@@ -1829,6 +1829,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &187635671
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2227,6 +2229,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &278277585
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2419,6 +2423,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &296161175
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2744,6 +2750,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &326448682
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2804,6 +2812,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &348539799
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3114,6 +3124,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &411598262
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3174,6 +3186,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &418514252
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3645,6 +3659,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &468814162
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3896,6 +3912,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &492485276
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4147,6 +4165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &500930687
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4341,6 +4361,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &524169323
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4797,6 +4819,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &547040619
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5533,6 +5557,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &624271135
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5593,6 +5619,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &625577877
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6409,6 +6437,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &685193278
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7237,6 +7267,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!1 &763198838
 GameObject:
   m_ObjectHideFlags: 0
@@ -7559,6 +7591,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &793761861
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7619,6 +7653,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &794058687
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7679,6 +7715,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &800773881
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7798,6 +7836,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &808602211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8075,6 +8115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &837480361
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8235,6 +8277,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &855272064
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8495,6 +8539,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &890529151
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9027,6 +9073,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &911530558
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9245,6 +9293,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &931200718
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9663,6 +9713,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &966532765
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10235,6 +10287,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &993337789
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10812,6 +10866,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1030593419
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11300,6 +11356,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1110257233
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11360,6 +11418,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1115671045
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12911,6 +12971,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1274117226
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14525,6 +14587,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1373808524
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14776,6 +14840,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1395388904
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15888,6 +15954,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1495037474
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15948,6 +16016,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1505865925
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16067,6 +16137,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1520485525
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17078,6 +17150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1577666298
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17138,6 +17212,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1584103450
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17346,6 +17422,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1588815705
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17617,6 +17695,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1616001889
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17815,6 +17895,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1630126290
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17875,6 +17957,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1634703163
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17935,6 +18019,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1635702834
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17995,6 +18081,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1648706784
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19530,6 +19618,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1768021474
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19722,6 +19812,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1784421315
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19903,6 +19995,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1797232239
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20083,6 +20177,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1819506542
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20677,6 +20773,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1859090736
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21989,6 +22087,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1983531489
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22049,6 +22149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &1984606445
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22321,6 +22423,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &2033224297
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22442,6 +22546,7 @@ MonoBehaviour:
   playerInventory: {fileID: 0}
   NPCInventory: {fileID: 0}
   selectedItem: {fileID: 0}
+  playerShopInventory: {fileID: 0}
 --- !u!1 &2036793449
 GameObject:
   m_ObjectHideFlags: 0
@@ -22615,6 +22720,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &2042278584
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22754,6 +22861,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &2047752422
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22948,6 +23057,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &2086070821
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23261,6 +23372,7 @@ MonoBehaviour:
   playerInventory: {fileID: 11400000, guid: f7f00a582ffb21d4fb038c1ebdf4ae37, type: 2}
   NPCInventory: {fileID: 11400000, guid: 3ae5da6d2112a4b4b90403fd43c4bf14, type: 2}
   selectedItem: {fileID: 0}
+  playerShopInventory: {fileID: 2115837178}
 --- !u!1 &2115837178
 GameObject:
   m_ObjectHideFlags: 0
@@ -23593,6 +23705,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 0}
   localPrice: 0
+  duration: 0
+  flag: 0
 --- !u!222 &2146861863
 CanvasRenderer:
   m_ObjectHideFlags: 0
