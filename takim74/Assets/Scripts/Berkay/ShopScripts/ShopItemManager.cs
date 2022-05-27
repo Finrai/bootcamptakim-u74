@@ -34,7 +34,12 @@ public class ShopItemManager : MonoBehaviour
             image.sprite = item._sprite;
         }
 
-        if(duration > 0)
+        if(item == null)
+        {
+            duration = 0;
+        }
+
+        if(duration > 0 && transform.GetChild(0).gameObject.name == "Sell")
         {
             duration -= Time.deltaTime;
 

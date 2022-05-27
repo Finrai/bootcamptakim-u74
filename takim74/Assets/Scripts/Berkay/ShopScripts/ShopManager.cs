@@ -104,6 +104,8 @@ public class ShopManager : MonoBehaviour
 
     public void DeleteSelectedItemFromInventory()
     {
+       
+
         for(int i=0; i<playerInventory.items.Count; i++)
         {
             if(playerInventory.items[i]._name == selectedItem.item._name)
@@ -112,6 +114,8 @@ public class ShopManager : MonoBehaviour
                 break;
             }
         }
+
+        
     }
 
     public void AddItemToNPCInventory()
@@ -126,9 +130,9 @@ public class ShopManager : MonoBehaviour
         if(CheckIfPlayerInventoryHasSelectedItem() == true && CheckIfHasEnoughSpace(NPCInventory))
         {
             CoinManagerSell();
-            DeleteSelectedItemFromInventory();
-            SetItemDurationSell();
             AddItemToNPCInventory();
+            SetItemDurationSell();
+            DeleteSelectedItemFromInventory();
         }
     }
 
@@ -141,7 +145,9 @@ public class ShopManager : MonoBehaviour
 
      public void SetItemDurationSell()
     {
-       
+       npcShopInventory.transform.GetChild(NPCInventory.items.Count -1).GetComponent<ShopItemManager>().duration = 
+
+       NPCInventory.items[NPCInventory.items.Count -1]._initialDuration;
     }
     
 }

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Yellow Potion
   m_EditorClassIdentifier: 
   _price: 0
-  _initialPrice: 0
-  _initialDuration: 0
-  _weight: 0
+  _initialPrice: 20
+  _initialDuration: 20
+  _weight: 20
   _name: Yellow Potion
   _sprite: {fileID: 1921086633527444709, guid: b15e4ea2603da974ab140d758af71173, type: 3}

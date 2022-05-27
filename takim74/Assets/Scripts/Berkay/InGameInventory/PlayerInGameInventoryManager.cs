@@ -16,8 +16,7 @@ public class PlayerInGameInventoryManager : MonoBehaviour
     void Update()
     {
         FillParentGameObjectsWithInventoryItems();
-
-        
+        CalculateWeight();
     }
 
     void FillParentGameObjectsWithInventoryItems()
@@ -44,5 +43,18 @@ public class PlayerInGameInventoryManager : MonoBehaviour
             transform.GetChild(i).transform.GetChild(0).gameObject.SetActive(true);
         }
 
+    }
+
+
+    public void CalculateWeight()
+    {
+        currentWeight = 0;
+
+        foreach(Item item in playerInventory.items)
+        {
+            currentWeight += item._weight;
+        }
+
+        Debug.Log(currentWeight);
     }
 }
