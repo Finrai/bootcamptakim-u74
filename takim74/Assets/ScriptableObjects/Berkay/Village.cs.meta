@@ -4,10 +4,16 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - food: {fileID: 11400000, guid: 11f7a820e3f451948aae3668627e8c29, type: 2}
+  - fish: {fileID: 11400000, guid: e7c97a64d2c26364682f986b8a3cb2ea, type: 2}
+  - honey: {fileID: 11400000, guid: 11f7a820e3f451948aae3668627e8c29, type: 2}
+  - bread: {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  - milk: {fileID: 11400000, guid: 603b2c03893219143ba1ec48102e9fe7, type: 2}
+  - bluePotion: {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
+  - redPotion: {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
+  - yellowPotion: {fileID: 11400000, guid: a4b674da63c52784abf153e992315bab, type: 2}
+  - greenPotion: {fileID: 11400000, guid: 386fc494ea9656940bf743d022e4e78e, type: 2}
+  - cheese: {fileID: 11400000, guid: bd21c130f579d314f8700988a6771aa4, type: 2}
   - sword: {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
-  - armor: {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - potion: {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

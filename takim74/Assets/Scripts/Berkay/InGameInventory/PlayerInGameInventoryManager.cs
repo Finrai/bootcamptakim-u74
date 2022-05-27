@@ -11,11 +11,14 @@ public class PlayerInGameInventoryManager : MonoBehaviour
     void Start()
     {
         FillParentGameObjectsWithInventoryItems();
+
+        //canvas.enabled = false;
     }
 
     void Update()
     {
         FillParentGameObjectsWithInventoryItems();
+        FillItemImages();
         CalculateWeight();
     }
 
@@ -34,13 +37,13 @@ public class PlayerInGameInventoryManager : MonoBehaviour
 
         for(int j=playerInventory.items.Count; j<transform.childCount; j++)
         {
-            transform.GetChild(j).transform.GetChild(0).gameObject.SetActive(false);
+            transform.GetChild(j).transform.GetChild(0).gameObject.GetComponent<Image>().enabled = false;
         }
 
         for(int i=0; i< playerInventory.items.Count; i++)
         {
             transform.GetChild(i).gameObject.GetComponent<InGameInventoryItemManager>().item = playerInventory.items[i];
-            transform.GetChild(i).transform.GetChild(0).gameObject.SetActive(true);
+            transform.GetChild(i).transform.GetChild(0).gameObject.GetComponent<Image>().enabled = true;
         }
 
     }
@@ -56,5 +59,18 @@ public class PlayerInGameInventoryManager : MonoBehaviour
         }
 
         Debug.Log(currentWeight);
+    }
+
+    public void OpenCloseInventory()
+    {
+        
+    }
+
+    public void FillItemImages()
+    {
+        for(int i=0; i<playerInventory.items.Count; i++)
+        {
+            transform.GetChild(i).GetComponent<InGameInventoryItemManager>().image.sprite = transform.GetChild(i).GetComponent<InGameInventoryItemManager>().item._sprite;
+        }
     }
 }
