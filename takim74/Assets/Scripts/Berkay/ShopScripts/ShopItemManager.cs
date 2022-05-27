@@ -8,9 +8,9 @@ public class ShopItemManager : MonoBehaviour
 {
     public Item item;
     private Image image;
-    private TextMeshProUGUI text;
     private ShopManager shopManager;
     [HideInInspector] public float localPrice;
+
 
     private int index;
 
@@ -20,20 +20,35 @@ public class ShopItemManager : MonoBehaviour
     {
         index = transform.GetSiblingIndex();
 
-        shopManager = GetComponentInParent<ShopManager>();
-        image = GetComponent<Image>();
-        text = GetComponentInChildren<TextMeshProUGUI>();
+        image = GetComponentInChildren<Image>();
 
-        localPrice = shopManager.village.CalculatePrice(item);
+        shopManager = GetComponentInParent<ShopManager>();
+
+        if(item != null)
+            localPrice = shopManager.village.CalculatePrice(item);
     }
+
     private void Start()
     {
         
     }
+
     private void Update()
     {
-        image.sprite = item._sprite;
-        
+        image = GetComponentInChildren<Image>();
+
+        if(item == null)
+        {
+            Debug.Log(transform.name + " is null");
+        }
+        else
+        {
+            if(transform.GetChild(0).gameObject.activeInHierarchy == true)
+            {
+                image.sprite = item._sprite;
+            }
+        }
+
         localPrice = shopManager.village.CalculatePrice(item);     
     }   
 }

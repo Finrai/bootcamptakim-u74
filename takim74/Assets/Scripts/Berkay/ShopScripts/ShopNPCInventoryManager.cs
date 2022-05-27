@@ -32,13 +32,13 @@ public class ShopNPCInventoryManager : MonoBehaviour
 
         for(int j=NPCInventory.items.Count; j<transform.childCount; j++)
         {
-            transform.GetChild(j).gameObject.SetActive(false);
+            transform.GetChild(j).transform.GetChild(0).transform.gameObject.SetActive(false);
         }
 
         for(int i=0; i< NPCInventory.items.Count; i++)
         {
             transform.GetChild(i).gameObject.GetComponent<ShopItemManager>().item = NPCInventory.items[i];
-            transform.GetChild(i).gameObject.SetActive(true);
+            transform.GetChild(i).transform.GetChild(0).transform.gameObject.SetActive(true);
         }
 
     }

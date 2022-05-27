@@ -12,24 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2176a2426f8d8ba47ba59e82062506e2, type: 3}
   m_Name: NPCInventory
   m_EditorClassIdentifier: 
-  coin: 203048.02
+  coin: 180235.45
   maxSize: 16
   maxWeight: 60
   items:
   - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
-  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  - {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
+  - {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
+  - {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
+  - {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
+  - {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
+  - {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
+  - {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
+  - {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
+  - {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
   currentWeight: 0

@@ -8,18 +8,27 @@ public class InGameInventoryItemManager : MonoBehaviour
 {
     public Item item;
     private Image image;
-
     private PlayerInGameInventoryManager inventory;
-   
+    private bool flag;
+    
+
+
     private void Awake()
     {
         inventory = GetComponentInParent<PlayerInGameInventoryManager>();
-        image = GetComponent<Image>();
+        image = GetComponentInChildren<Image>();
+    }
+    private void Start()
+    {
         
     }
     
     private void Update()
     {
-        image.sprite = item._sprite;
+        if(image.gameObject.activeInHierarchy == true)
+        {
+            image.sprite = item._sprite; 
+        }
+
     }
 }

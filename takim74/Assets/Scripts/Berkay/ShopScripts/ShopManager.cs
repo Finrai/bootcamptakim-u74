@@ -117,6 +117,8 @@ public class ShopManager : MonoBehaviour
 
     public void SellItem()
     {
+        Debug.Log("clicked button");
+
         GetSelectedItem();
 
         if(CheckIfPlayerInventoryHasSelectedItem() == true && CheckIfHasEnoughSpace(NPCInventory))
