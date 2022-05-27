@@ -10,23 +10,14 @@ public class ShopItemManager : MonoBehaviour
     private Image image;
     private ShopManager shopManager;
     [HideInInspector] public float localPrice; 
-    private int index;
     public float duration;
-    [HideInInspector] public bool flag;
-   
-
-    
 
     private void Awake()
     {
-        index = transform.GetSiblingIndex();
-
         image = GetComponentInChildren<Image>();
 
         shopManager = GetComponentInParent<ShopManager>();
 
-        if(item != null)
-            localPrice = shopManager.village.CalculatePrice(item);
     }
 
     private void Start()
@@ -38,15 +29,19 @@ public class ShopItemManager : MonoBehaviour
     {
         image = GetComponentInChildren<Image>();
 
-        if(item == null)
+        if(item != null && transform.GetChild(0).gameObject.activeInHierarchy == true)
         {
-            
+            image.sprite = item._sprite;
         }
-        else
+
+        if(duration > 0)
         {
-            if(transform.GetChild(0).gameObject.activeInHierarchy == true)
+            duration -= Time.deltaTime;
+
+            if(item != null)
             {
-                image.sprite = item._sprite;
+                localPrice = ( shopManager.village.CalculatePrice(item) ) *  duration/item._initialDuration;
+                Debug.Log(transform.name + " " + localPrice);
             }
         }
     }   

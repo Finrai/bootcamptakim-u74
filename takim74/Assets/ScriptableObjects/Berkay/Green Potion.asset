@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2176a2426f8d8ba47ba59e82062506e2, type: 3}
-  m_Name: NPCInventory
+  m_Script: {fileID: 11500000, guid: a5996658ed530584281cf3ff4b802a5e, type: 3}
+  m_Name: Green Potion
   m_EditorClassIdentifier: 
-  coin: 195926.27
-  maxSize: 16
-  maxWeight: 60
-  items: []
-  currentWeight: 0
+  _price: 0
+  _initialPrice: 10
+  _initialDuration: 10
+  _weight: 10
+  _name: Green Potion
+  _sprite: {fileID: -4863119129468040026, guid: b15e4ea2603da974ab140d758af71173, type: 3}

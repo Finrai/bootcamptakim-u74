@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5996658ed530584281cf3ff4b802a5e, type: 3}
-  m_Name: Armor
+  m_Name: Milk
   m_EditorClassIdentifier: 
-  _price: 30
-  _initialPrice: 30
-  _initialDuration: 50
-  _leftDuration: -1603.9836
-  _weight: 5
-  _name: Armor
-  _sprite: {fileID: 21300000, guid: b1454cf7abd023449b76d224e1c215ec, type: 3}
+  _price: 0
+  _initialPrice: 10
+  _initialDuration: 10
+  _weight: 10
+  _name: Milk
+  _sprite: {fileID: -3516599799048029267, guid: b15e4ea2603da974ab140d758af71173, type: 3}

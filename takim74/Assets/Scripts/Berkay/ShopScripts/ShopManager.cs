@@ -11,7 +11,7 @@ public class ShopManager : MonoBehaviour
     [HideInInspector] public  ShopItemManager selectedItem;
 
     public GameObject playerShopInventory;
-    
+    public GameObject npcShopInventory;
 
     public void GetSelectedItem()
     {
@@ -73,7 +73,7 @@ public class ShopManager : MonoBehaviour
         {
             CoinManagerBuy();
             AddItemToPlayerInventory();
-            SetItemDuration();
+            SetItemDurationBuy();
             DeleteSelectedItemFromNPCInventory();
         }
     }
@@ -127,15 +127,21 @@ public class ShopManager : MonoBehaviour
         {
             CoinManagerSell();
             DeleteSelectedItemFromInventory();
+            SetItemDurationSell();
             AddItemToNPCInventory();
         }
     }
 
-    public void SetItemDuration()
+    public void SetItemDurationBuy()
     {
         playerShopInventory.transform.GetChild(playerInventory.items.Count -1).GetComponent<ShopItemManager>().duration 
 
         = playerInventory.items[playerInventory.items.Count -1 ]._initialDuration;
+    }
+
+     public void SetItemDurationSell()
+    {
+       
     }
     
 }
