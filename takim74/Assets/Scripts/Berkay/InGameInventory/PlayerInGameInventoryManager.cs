@@ -7,12 +7,14 @@ public class PlayerInGameInventoryManager : MonoBehaviour
 {
     public PlayerInventory playerInventory;
     [HideInInspector] float currentWeight;
+    public Canvas canvas;
 
     void Start()
     {
         FillParentGameObjectsWithInventoryItems();
 
-        //canvas.enabled = false;
+        canvas.enabled = false;
+
     }
 
     void Update()
@@ -20,6 +22,11 @@ public class PlayerInGameInventoryManager : MonoBehaviour
         FillParentGameObjectsWithInventoryItems();
         FillItemImages();
         CalculateWeight();
+
+        if(Input.GetKeyDown(KeyCode.K))
+        {
+            canvas.enabled = !canvas.enabled;
+        }
     }
 
     void FillParentGameObjectsWithInventoryItems()
@@ -61,16 +68,11 @@ public class PlayerInGameInventoryManager : MonoBehaviour
         Debug.Log(currentWeight);
     }
 
-    public void OpenCloseInventory()
-    {
-        
-    }
-
     public void FillItemImages()
     {
         for(int i=0; i<playerInventory.items.Count; i++)
         {
             transform.GetChild(i).GetComponent<InGameInventoryItemManager>().image.sprite = transform.GetChild(i).GetComponent<InGameInventoryItemManager>().item._sprite;
         }
-    }
+    }   
 }

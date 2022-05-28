@@ -98,8 +98,8 @@ public class ShopManager : MonoBehaviour
 
     public void CoinManagerSell()
     {
-        playerInventory.coin += selectedItem.localPrice;
-        NPCInventory.coin -= selectedItem.localPrice;
+        playerInventory.coin += selectedItem.durationBasedPrice;
+        NPCInventory.coin -= selectedItem.durationBasedPrice;
     }
 
     public void DeleteSelectedItemFromInventory()

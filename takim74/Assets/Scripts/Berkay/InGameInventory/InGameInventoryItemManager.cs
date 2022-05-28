@@ -10,11 +10,11 @@ public class InGameInventoryItemManager : MonoBehaviour
     public Image image;
     private PlayerInGameInventoryManager inventory;
     private bool flag;
+    
 
     private void Awake()
     {
         inventory = GetComponentInParent<PlayerInGameInventoryManager>();
-        image = GetComponentInChildren<Image>();
+        image = GetComponentInChildren<Image>();  
     }
-
 }

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5996658ed530584281cf3ff4b802a5e, type: 3}
   m_Name: Red Potion
   m_EditorClassIdentifier: 
-  _price: 10
-  _initialPrice: 10
-  _initialDuration: 8
+  _price: 272.47632
+  _initialPrice: 50
+  _initialDuration: 100
   _weight: 8
   _name: Red Potion
   _sprite: {fileID: -6582823045291326783, guid: b15e4ea2603da974ab140d758af71173, type: 3}

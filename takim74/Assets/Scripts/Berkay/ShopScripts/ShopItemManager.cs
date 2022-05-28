@@ -9,7 +9,8 @@ public class ShopItemManager : MonoBehaviour
     public Item item;
     private Image image;
     private ShopManager shopManager;
-    [HideInInspector] public float localPrice; 
+    public float localPrice; 
+    public float durationBasedPrice;
     public float duration;
 
     private void Awake()
@@ -18,11 +19,6 @@ public class ShopItemManager : MonoBehaviour
 
         shopManager = GetComponentInParent<ShopManager>();
 
-    }
-
-    private void Start()
-    {
-        localPrice = shopManager.village.CalculatePrice(item);   
     }
 
     private void Update()
@@ -34,20 +30,21 @@ public class ShopItemManager : MonoBehaviour
             image.sprite = item._sprite;
         }
 
-        if(item == null)
+        if(item != null) 
+        {
+            localPrice = item._initialPrice * shopManager.village.CalculatePriceMultipler(item);   
+            durationBasedPrice = localPrice * (duration/item._initialDuration);
+        }
+
+        duration -= Time.deltaTime;
+
+        if(duration <= 0) 
         {
             duration = 0;
         }
 
-        if(duration > 0 && transform.GetChild(0).gameObject.name == "Sell")
-        {
-            duration -= Time.deltaTime;
-
-            if(item != null)
-            {
-                localPrice = ( shopManager.village.CalculatePrice(item) ) *  duration/item._initialDuration;
-                Debug.Log(transform.name + " " + localPrice);
-            }
-        }
+        if(item != null)
+            Debug.Log("local price: " + localPrice + " initial price: " + item._initialPrice);
+        
     }   
 }

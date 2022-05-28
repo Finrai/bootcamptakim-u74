@@ -6,16 +6,19 @@ public class PriceRandomizer : MonoBehaviour
 {
     // add each item manually
 
-   public Item food;
-   public Item sword;
-   public Item armor;
-   public Item potion;
+    public Item fish;           
+    public Item honey;         
+    public Item bread;          
+    public Item milk;           
+    public Item bluePotion;     
+    public Item redPotion;     
+    public Item yellowPotion;   
+    public Item greenPotion;    
+    public Item cheese;         
+    public Item sword;         
 
    public Village villageA;
-   public Village villageB;
-   public Village villageC;
-   public Village villageD;
-
+  
    public float inEverySeconds;
    private float inEverySecondsInitialValue;
 
@@ -29,27 +32,46 @@ public class PriceRandomizer : MonoBehaviour
 
 
    private void Update()
-   {
-       //ControlItemPriceIfTooLowOrHigh(food);
+   {   
+            ItemPriceRandomizer(fish, downScale , upScale);
+            ItemPriceRangeManager(fish);
 
-       inEverySeconds -= Time.deltaTime;
+            ItemPriceRandomizer(honey, downScale , upScale);
+            ItemPriceRangeManager(honey);
 
-       if(inEverySeconds <= 0)
-       {    
-            ItemPriceRandomizer(food, downScale , upScale);
-            ItemPriceRangeManager(food);
+            ItemPriceRandomizer(bread, downScale , upScale);
+            ItemPriceRangeManager(bread);
 
-            inEverySeconds = inEverySecondsInitialValue;
-       }
+            ItemPriceRandomizer(milk, downScale , upScale);
+            ItemPriceRangeManager(milk);
+
+            ItemPriceRandomizer(bluePotion, downScale , upScale);
+            ItemPriceRangeManager(bluePotion);
+
+            ItemPriceRandomizer(redPotion, downScale , upScale);
+            ItemPriceRangeManager(redPotion);
+
+            ItemPriceRandomizer(yellowPotion, downScale , upScale);
+            ItemPriceRangeManager(yellowPotion);
+
+            ItemPriceRandomizer(greenPotion, downScale , upScale);
+            ItemPriceRangeManager(greenPotion);
+
+            ItemPriceRandomizer(cheese, downScale , upScale);
+            ItemPriceRangeManager(cheese);
+
+            ItemPriceRandomizer(sword, downScale , upScale);
+            ItemPriceRangeManager(sword); 
+
    }
 
    private void ItemPriceRandomizer(Item item,float x1, float x2)
    {
         item._price += Random.Range
         (
-        x1 * (-food._initialPrice*0.1f) + food._price * 0.05f
+        x1 * (-item._initialPrice*0.1f) + item._price * 0.05f
         , 
-        x2 * (food._initialPrice*0.1f) - food._price * 0.05f
+        x2 * (item._initialPrice*0.1f) - item._price * 0.05f
         );
 
         if(item._price <= 0)
