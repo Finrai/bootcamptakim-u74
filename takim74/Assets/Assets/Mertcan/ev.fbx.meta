@@ -5,20 +5,105 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.056
+    second: {fileID: 2100000, guid: 64ccdf5a312f606489fafd1c4459bf73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.057
+    second: {fileID: 2100000, guid: 220fa67a737a30d418fea9a70ee60023, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.058
+    second: {fileID: 2100000, guid: 422b6f4d8cfc4d644bb25053f83cea29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.059
+    second: {fileID: 2100000, guid: c85649b1fc98c94488e338017f9b1c4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.060
+    second: {fileID: 2100000, guid: 5e61f36dbb3fc5645b1ba5235b085afa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.061
+    second: {fileID: 2100000, guid: 97b9c1806db49cc48b18eb9793c919a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.062
+    second: {fileID: 2100000, guid: 308c3013725965546a7952d4483e6b28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.063
+    second: {fileID: 2100000, guid: 949841df49ba42e4d8c8f0d6407c6523, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.064
+    second: {fileID: 2100000, guid: eba8eb52b51838843a321fc9a28b41d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.065
+    second: {fileID: 2100000, guid: dc03bd6cc84dd71438a536224e80ac65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.067
+    second: {fileID: 2100000, guid: a36c21965f7944a4dade4898ce834363, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.068
+    second: {fileID: 2100000, guid: f8e224255c243374992f9e5f850dd81a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.069
+    second: {fileID: 2100000, guid: 3d2a8cd0c38c62f4195cbff1e8642cff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.070
+    second: {fileID: 2100000, guid: b41005c569a74c44b8418513867ea9f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.071
+    second: {fileID: 2100000, guid: 338a5ba0a9ce41d4f9cf7fb3dec13c8f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.073
+    second: {fileID: 2100000, guid: 41b0ddc0cf737b445b3a44553769b6a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.093
+    second: {fileID: 2100000, guid: 9e4400bc5887dc54db1a834317274574, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: ImphenziaPalette01-256-Gradient
-    second: {fileID: 2800000, guid: 3224e132a9a272041bfb4769a80dd42b, type: 3}
+    second: {fileID: 2800000, guid: 9e18506c78e4be649847c362da1faea1, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Planks013_1K_Color
-    second: {fileID: 2800000, guid: 27b35fe5ef56b1f4f8e17570beede210, type: 3}
+    second: {fileID: 2800000, guid: 293f002c86743134fa9ba52c7d46fcd5, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: reed_roof_03_diff_1k
-    second: {fileID: 2800000, guid: e732fe0b7a5680349bc25f9b99207481, type: 3}
+    second: {fileID: 2800000, guid: 89f84591481b6a641a9e68ee0d1f6f9b, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -100,7 +185,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.002
+    globalScale: 0.2
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
