@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5996658ed530584281cf3ff4b802a5e, type: 3}
   m_Name: Bread
   m_EditorClassIdentifier: 
-  _price: 0.5
   _initialPrice: 50
+  _price: 50
   _initialDuration: 50
   _weight: 5
   _name: Bread

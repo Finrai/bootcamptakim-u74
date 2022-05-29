@@ -5,8 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Item", menuName = "Item")]
 public class Item : ScriptableObject
 {
-    [HideInInspector]public float _price;
+    
     public float _initialPrice;
+    public float _price;
     public float _initialDuration;
     public float _weight;
 

@@ -43,8 +43,6 @@ public class ShopItemManager : MonoBehaviour
             duration = 0;
         }
 
-        if(item != null)
-            Debug.Log("local price: " + localPrice + " initial price: " + item._initialPrice);
         
     }   
 }

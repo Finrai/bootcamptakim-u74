@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class ShopNPCInventoryManager : MonoBehaviour
 {
-    public PlayerInventory NPCInventory;
+    [HideInInspector] public PlayerInventory NPCInventory;
 
     private void Awake()
+    {
+        NPCInventory = transform.GetComponentInParent<ShopManager>().NPCInventory;
+
+        NPCInventory.maxSize = transform.childCount;
+    }
+
+    private void Start()
     {
         FillParentGameObjectsWithInventoryItems();
     }

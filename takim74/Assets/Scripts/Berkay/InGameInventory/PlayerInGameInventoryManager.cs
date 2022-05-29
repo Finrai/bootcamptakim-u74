@@ -65,7 +65,7 @@ public class PlayerInGameInventoryManager : MonoBehaviour
             currentWeight += item._weight;
         }
 
-        Debug.Log(currentWeight);
+        
     }
 
     public void FillItemImages()
