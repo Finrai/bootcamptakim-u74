@@ -5,6 +5,8 @@ using UnityEngine;
 public class PriceRandomizer : MonoBehaviour
 {
     public List<Item> items = new List<Item>();
+    public List<PlayerInventory> npcInventories = new List<PlayerInventory>();
+    public List<int> numberOfItemTypes = new List<int>();
 
     private void Start()
     {
@@ -17,6 +19,8 @@ public class PriceRandomizer : MonoBehaviour
     private void Update()
     {
         deltaPriceRandomizer(items);
+
+
     }
 
     public void deltaPriceRandomizer(List<Item> items)
@@ -49,9 +53,7 @@ public class PriceRandomizer : MonoBehaviour
             } 
             
         }
-
-        
-
     }
-
 }
+
+

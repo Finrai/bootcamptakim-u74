@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18008ff607b339045b0ecd6841ca91c7, type: 3}
+  m_Name: Village-C
+  m_EditorClassIdentifier: 
+  fish: {fileID: 11400000, guid: e7c97a64d2c26364682f986b8a3cb2ea, type: 2}
+  fishPriceMultipler: 3
+  honey: {fileID: 11400000, guid: 11f7a820e3f451948aae3668627e8c29, type: 2}
+  honeyPriceMultipler: 3
+  bread: {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  breadPriceMultipler: 3
+  milk: {fileID: 11400000, guid: 603b2c03893219143ba1ec48102e9fe7, type: 2}
+  milkPriceMultipler: 3
+  bluePotion: {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
+  bluePotionPriceMultipler: 3
+  redPotion: {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
+  redPotionPriceMultipler: 3
+  yellowPotion: {fileID: 11400000, guid: a4b674da63c52784abf153e992315bab, type: 2}
+  yellowPotionPriceMultipler: 3
+  greenPotion: {fileID: 11400000, guid: 386fc494ea9656940bf743d022e4e78e, type: 2}
+  greenPotionPriceMultipler: 3
+  cheese: {fileID: 11400000, guid: bd21c130f579d314f8700988a6771aa4, type: 2}
+  cheesePriceMultipler: 3
+  sword: {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
+  swordPriceMultipler: 3

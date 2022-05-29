@@ -3,33 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerInGameInventoryManager : MonoBehaviour
+public class RepairItem : MonoBehaviour
 {
     public PlayerInventory playerInventory;
-    [HideInInspector] float currentWeight;
-    public Canvas canvas;
 
-    void Start()
-    {
-        FillParentGameObjectsWithInventoryItems();
+    public DurationSynchronizer durationSynchronizer;
 
-        if(canvas != null)
-        {
-            canvas.enabled = false;
-        }
-
-    }
-
-    void Update()
+    private void Update()
     {
         FillParentGameObjectsWithInventoryItems();
         FillItemImages();
-        CalculateWeight();
-
-        if(Input.GetKeyDown(KeyCode.K) && canvas != null)
-        {
-            canvas.enabled = !canvas.enabled;
-        }
     }
 
     void FillParentGameObjectsWithInventoryItems()
@@ -58,24 +41,26 @@ public class PlayerInGameInventoryManager : MonoBehaviour
 
     }
 
-
-    public void CalculateWeight()
-    {
-        currentWeight = 0;
-
-        foreach(Item item in playerInventory.items)
-        {
-            currentWeight += item._weight;
-        }
-
-        
-    }
-
     public void FillItemImages()
     {
         for(int i=0; i<playerInventory.items.Count; i++)
         {
             transform.GetChild(i).GetComponent<InGameInventoryItemManager>().image.sprite = transform.GetChild(i).GetComponent<InGameInventoryItemManager>().item._sprite;
         }
-    }   
+    } 
+
+
+    public void RepairThisItem()
+    {
+        durationSynchronizer.shopPlayerInventorys[0].transform.GetChild(GetSelectedItemIndex()).gameObject.GetComponent<ShopItemManager>().duration 
+        = 
+        durationSynchronizer.shopPlayerInventorys[0].transform.GetChild(GetSelectedItemIndex()).gameObject.GetComponent<ShopItemManager>().item._initialDuration;
+
+    }
+
+    public int GetSelectedItemIndex()
+    {
+        return UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.transform.GetSiblingIndex();
+    }
+
 }
