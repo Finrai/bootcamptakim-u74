@@ -10,11 +10,12 @@ public class StockMarket : MonoBehaviour
     public List<WorldEvent> worldEvents = new List<WorldEvent>();    
 
     bool flag = true;
-    [SerializeField] float eventDuration;
-    
-    [SerializeField] float timeBeforeGameStarted;
-    
-    [SerializeField] float nextEventTime;
+    float eventDuration;
+    float timeBeforeGameStarted;
+    float nextEventTime;
+
+    float updatePriceTimer=0;
+    public float updatePriceEverySeconds;
 
     Village randomVillage;
     WorldEvent randomEvent;
@@ -31,9 +32,14 @@ public class StockMarket : MonoBehaviour
 
     private void Update()
     {
-        deltaPriceRandomizer(items);
-
         timeBeforeGameStarted += Time.deltaTime;
+        updatePriceTimer += Time.deltaTime;
+
+        if(updatePriceTimer > updatePriceEverySeconds)
+        {
+            updatePriceTimer = 0;
+            deltaPriceRandomizer(items);
+        }
 
         if(timeBeforeGameStarted > 10f)
         {
@@ -73,13 +79,13 @@ public class StockMarket : MonoBehaviour
         {
             if(item._initialPrice * 2  < item._price)
             {
-                item._price -= item._price * 1/100;
+                item._price -= item._price * 2.5f/100;
                 continue;
             }
 
             if(item._initialPrice / 2  > item._price)
             {
-                item._price += item._price * 1/100;
+                item._price += item._price * 2.5f/100;
                 continue;
             }
 
@@ -88,11 +94,11 @@ public class StockMarket : MonoBehaviour
 
             if(number == 1)
             {
-                item._price += item._price * 1/100;
+                item._price += item._price * 2.5f/100;
             } 
             else
             {
-                item._price -= item._price * 1/100;
+                item._price -= item._price * 2.5f/100;
             } 
         }
     }
