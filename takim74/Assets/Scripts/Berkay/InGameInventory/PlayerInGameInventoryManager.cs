@@ -27,7 +27,16 @@ public class PlayerInGameInventoryManager : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.K) && canvas != null)
         {
-            canvas.enabled = !canvas.enabled;
+            if(canvas.enabled == true) 
+            {
+                canvas.enabled = false;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+            else 
+            {
+                canvas.enabled = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
         }
     }
 
@@ -76,4 +85,11 @@ public class PlayerInGameInventoryManager : MonoBehaviour
             transform.GetChild(i).GetComponent<InGameInventoryItemManager>().image.sprite = transform.GetChild(i).GetComponent<InGameInventoryItemManager>().item._sprite;
         }
     }   
+
+    public void DeleteItem() 
+    {
+        var selectedItemIndex = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.transform.GetSiblingIndex();
+
+        playerInventory.items.RemoveAt(selectedItemIndex);
+    }
 }

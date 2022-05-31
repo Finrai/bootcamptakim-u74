@@ -12,10 +12,13 @@ public class ShopItemManager : MonoBehaviour
     public float localPrice; 
     public float durationBasedPrice;
     public float duration;
+    private Slider slider;
 
     private void Awake()
     {
         image = GetComponentInChildren<Image>();
+
+        slider = GetComponentInChildren<Slider>();
 
         shopManager = GetComponentInParent<ShopManager>();
 
@@ -41,6 +44,15 @@ public class ShopItemManager : MonoBehaviour
         if(duration <= 0) 
         {
             duration = 0;
+        }
+
+        slider.gameObject.SetActive(transform.GetChild(0).transform.gameObject.activeInHierarchy);
+
+        if(slider.gameObject.activeInHierarchy == true)
+        {
+            slider.maxValue = item._initialDuration;
+            slider.minValue = 0;
+            slider.value = duration;
         }
 
         

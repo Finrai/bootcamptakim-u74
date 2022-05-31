@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Yellow Potion
   m_EditorClassIdentifier: 
   _initialPrice: 50
-  _price: 50
+  _price: 47.471855
   _initialDuration: 20
   _weight: 20
   _name: Yellow Potion
