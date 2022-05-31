@@ -16,7 +16,9 @@ public class Village : ScriptableObject
     public Item cheese;         public float cheesePriceMultipler;
     public Item sword;          public float swordPriceMultipler;
 
+    private float nullNumber;
 
+    
    
     public float CalculatePriceMultipler(Item itemType) // returns 0 if fails
     {
@@ -65,6 +67,50 @@ public class Village : ScriptableObject
         
         return price;
 
+    }
+
+    public ref float ReturnRefValue(Item itemType) 
+    {
+        if(itemType == fish)
+        {
+            return ref fishPriceMultipler;
+        }
+        else if(itemType == honey)
+        {
+            return ref honeyPriceMultipler;
+        }
+        else if(itemType == bread)
+        {
+            return ref breadPriceMultipler;
+        }
+        else if(itemType == bluePotion)
+        {
+            return ref bluePotionPriceMultipler;
+        }
+        else if(itemType == redPotion)
+        {
+            return ref redPotionPriceMultipler;
+        }
+        else if(itemType == greenPotion)
+        {
+            return ref greenPotionPriceMultipler;
+        }
+        else if(itemType == yellowPotion)
+        {
+            return ref yellowPotionPriceMultipler;
+        }
+        else if(itemType == cheese)
+        {
+            return ref cheesePriceMultipler;
+        }
+        else if(itemType == sword)
+        {
+            return ref swordPriceMultipler;
+        }
+        else
+        {
+            return ref nullNumber;
+        }
     }
 
 

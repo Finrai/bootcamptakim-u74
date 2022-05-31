@@ -38120,7 +38120,7 @@ GameObject:
   - component: {fileID: 1417716236}
   - component: {fileID: 1417716235}
   m_Layer: 0
-  m_Name: PriceRandomizer
+  m_Name: Stock Market
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38153,7 +38153,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3ae5da6d2112a4b4b90403fd43c4bf14, type: 2}
   - {fileID: 11400000, guid: b2b4b68d9667c8940b42586df75afd37, type: 2}
   - {fileID: 11400000, guid: 0a3985f5c0a1432499ec0286f9a41814, type: 2}
-  numberOfItemTypes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  villages:
+  - {fileID: 11400000, guid: 0bd48930df27dbe4b9590df4603d5f75, type: 2}
+  - {fileID: 11400000, guid: 5cc99ad8243223446b6d78b2f7fe6ffe, type: 2}
+  - {fileID: 11400000, guid: 8337e0d9f320f4248bd6ae821bbebe24, type: 2}
+  worldEvents:
+  - {fileID: 11400000, guid: 5d5c97594dda45d4fa0a7c9974241ba4, type: 2}
 --- !u!4 &1417716236
 Transform:
   m_ObjectHideFlags: 0
