@@ -48,7 +48,7 @@ public class StockMarket : MonoBehaviour
                 StartWorldEventForGivenVillage(randomEvent,randomVillage);
                 eventDuration = randomEvent.duration;
 
-                nextEventTime = timeBeforeGameStarted * 3;
+                nextEventTime = timeBeforeGameStarted + 30;
                 flag = false;
             }
 
@@ -64,12 +64,7 @@ public class StockMarket : MonoBehaviour
             {
                 Invoke("SetFlagTrue",0);
             }
-
-
-
-        }
-        
-        
+        }        
     }
 
     public void deltaPriceRandomizer(List<Item> items)

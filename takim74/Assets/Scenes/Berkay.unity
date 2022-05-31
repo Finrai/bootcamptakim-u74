@@ -38159,6 +38159,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8337e0d9f320f4248bd6ae821bbebe24, type: 2}
   worldEvents:
   - {fileID: 11400000, guid: 5d5c97594dda45d4fa0a7c9974241ba4, type: 2}
+  - {fileID: 11400000, guid: 625af8be0c4a3b046ac138a01b330186, type: 2}
+  - {fileID: 11400000, guid: 6c6d3a0c4a7e8d24bbdf957c78f65ba5, type: 2}
+  eventDuration: 0
+  timeBeforeGameStarted: 0
+  nextEventTime: 0
 --- !u!4 &1417716236
 Transform:
   m_ObjectHideFlags: 0

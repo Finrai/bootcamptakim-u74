@@ -52,15 +52,23 @@ public class RepairItem : MonoBehaviour
 
     public void RepairThisItem()
     {
-        durationSynchronizer.shopPlayerInventorys[0].transform.GetChild(GetSelectedItemIndex()).gameObject.GetComponent<ShopItemManager>().duration 
-        = 
-        durationSynchronizer.shopPlayerInventorys[0].transform.GetChild(GetSelectedItemIndex()).gameObject.GetComponent<ShopItemManager>().item._initialDuration;
+        if(GetSelectedItemType()._name == "Sword")
+        {
+            durationSynchronizer.shopPlayerInventorys[0].transform.GetChild(GetSelectedItemIndex()).gameObject.GetComponent<ShopItemManager>().duration 
+            = 
+            durationSynchronizer.shopPlayerInventorys[0].transform.GetChild(GetSelectedItemIndex()).gameObject.GetComponent<ShopItemManager>().item._initialDuration;
+        }
 
     }
 
     public int GetSelectedItemIndex()
     {
         return UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.transform.GetSiblingIndex();
+    }
+
+    public Item GetSelectedItemType()
+    {
+        return UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.GetComponent<InGameInventoryItemManager>().item;
     }
 
 }

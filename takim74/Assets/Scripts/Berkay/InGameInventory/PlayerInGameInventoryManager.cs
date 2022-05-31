@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class PlayerInGameInventoryManager : MonoBehaviour
 {
     public PlayerInventory playerInventory;
-    [HideInInspector] float currentWeight;
     public Canvas canvas;
 
     void Start()
@@ -61,13 +60,12 @@ public class PlayerInGameInventoryManager : MonoBehaviour
 
     public void CalculateWeight()
     {
-        currentWeight = 0;
+        playerInventory.currentWeight = 0;
 
         foreach(Item item in playerInventory.items)
         {
-            currentWeight += item._weight;
+            playerInventory.currentWeight += item._weight;
         }
-
         
     }
 

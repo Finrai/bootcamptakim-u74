@@ -104,8 +104,6 @@ public class ShopManager : MonoBehaviour
 
     public void DeleteSelectedItemFromInventory()
     {
-       
-
         for(int i=0; i<playerInventory.items.Count; i++)
         {
             if(playerInventory.items[i]._name == selectedItem.item._name)
@@ -114,8 +112,6 @@ public class ShopManager : MonoBehaviour
                 break;
             }
         }
-
-        
     }
 
     public void AddItemToNPCInventory()
@@ -149,5 +145,5 @@ public class ShopManager : MonoBehaviour
 
        NPCInventory.items[NPCInventory.items.Count -1]._initialDuration;
     }
-    
+
 }

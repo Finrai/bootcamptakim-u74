@@ -9,14 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2176a2426f8d8ba47ba59e82062506e2, type: 3}
-  m_Name: Inventory
+  m_Script: {fileID: 11500000, guid: d9e9b1f86af457c448599549553b9d38, type: 3}
+  m_Name: War
   m_EditorClassIdentifier: 
-  coin: 23.037933
-  maxSize: 40
-  maxWeight: 40
   items:
   - {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
-  - {fileID: 11400000, guid: a4b674da63c52784abf153e992315bab, type: 2}
-  - {fileID: 11400000, guid: a4b674da63c52784abf153e992315bab, type: 2}
-  currentWeight: 0
+  priceMultiplier: 5
+  duration: 20
+  initialPriceses:
+  - 1
