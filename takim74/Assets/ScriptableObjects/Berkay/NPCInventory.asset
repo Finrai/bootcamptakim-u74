@@ -12,11 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2176a2426f8d8ba47ba59e82062506e2, type: 3}
   m_Name: NPCInventory
   m_EditorClassIdentifier: 
-  coin: 7100.074
+  coin: 8550.466
   maxSize: 16
   maxWeight: 60
-  items:
-  - {fileID: 11400000, guid: a4b674da63c52784abf153e992315bab, type: 2}
-  - {fileID: 11400000, guid: a4b674da63c52784abf153e992315bab, type: 2}
-  - {fileID: 11400000, guid: a4b674da63c52784abf153e992315bab, type: 2}
+  items: []
   currentWeight: 0
