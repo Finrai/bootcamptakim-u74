@@ -127,8 +127,8 @@ public class ShopManager : MonoBehaviour
         {
             CoinManagerSell();
             AddItemToNPCInventory();
-            SetItemDurationSell();
             DeleteSelectedItemFromInventory();
+            SetItemDurationSell();
         }
     }
 
@@ -144,6 +144,19 @@ public class ShopManager : MonoBehaviour
        npcShopInventory.transform.GetChild(NPCInventory.items.Count -1).GetComponent<ShopItemManager>().duration = 
 
        NPCInventory.items[NPCInventory.items.Count -1]._initialDuration;
+
+        for(int i=selectedItem.transform.GetSiblingIndex(); i<playerInventory.maxSize; i++) 
+        {
+           if(i != playerInventory.maxSize - 1)
+           {
+                playerShopInventory.transform.GetChild(i).GetComponent<ShopItemManager>().duration =
+                playerShopInventory.transform.GetChild(i+1).GetComponent<ShopItemManager>().duration;
+           }
+           else
+           {
+               Debug.Log("last item");
+           }
+        }
     }
 
 }

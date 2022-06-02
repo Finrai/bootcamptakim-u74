@@ -38,7 +38,7 @@ public class ShopItemManager : MonoBehaviour
             localPrice = item._price * shopManager.village.CalculatePriceMultipler(item);   
             durationBasedPrice = localPrice * (duration/item._initialDuration);
         }
-
+        
         duration -= Time.deltaTime;
 
         if(duration <= 0) 

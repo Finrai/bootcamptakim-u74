@@ -7,6 +7,7 @@ public class PlayerInGameInventoryManager : MonoBehaviour
 {
     public PlayerInventory playerInventory;
     public Canvas canvas;
+    public DurationSynchronizer durationSynchronizer;
 
     void Start()
     {
@@ -89,6 +90,21 @@ public class PlayerInGameInventoryManager : MonoBehaviour
     public void DeleteItem() 
     {
         var selectedItemIndex = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.transform.GetSiblingIndex();
+
+        for(int i=selectedItemIndex; i<playerInventory.maxSize; i++) 
+        {
+           if(i != playerInventory.maxSize - 1)
+           {
+                durationSynchronizer.shopPlayerInventorys[0].transform.GetChild(i).GetComponent<ShopItemManager>().duration =
+                durationSynchronizer.shopPlayerInventorys[0].transform.GetChild(i+1).GetComponent<ShopItemManager>().duration;
+           }
+           else
+           {
+               Debug.Log("last item");
+           }
+        }
+
+
 
         playerInventory.items.RemoveAt(selectedItemIndex);
     }

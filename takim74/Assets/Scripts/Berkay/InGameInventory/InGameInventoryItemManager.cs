@@ -10,13 +10,7 @@ public class InGameInventoryItemManager : MonoBehaviour
     public Image image;
     public PlayerInGameInventoryManager inventory;
     private bool flag;
-
     [SerializeField] private Slider slider;
-
-    float duration;
-
-    public GameObject shopInventory;
-    
 
     private void Awake()
     {
@@ -33,7 +27,9 @@ public class InGameInventoryItemManager : MonoBehaviour
         {
             slider.maxValue = item._initialDuration;
             slider.minValue = 0;
-            slider.value = shopInventory.transform.GetChild(this.transform.GetSiblingIndex()).GetComponent<ShopItemManager>().duration;        
+
+            slider.value = GetComponentInParent<PlayerInGameInventoryManager>().durationSynchronizer
+                .shopPlayerInventorys[0].transform.GetChild(this.transform.GetSiblingIndex()).GetComponent<ShopItemManager>().duration;
         }
     }
 }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialPrice: 50
   _price: 50
-  _initialDuration: 50
+  _initialDuration: 10000
   _weight: 5
   _name: Bread
   _sprite: {fileID: 572650729104695372, guid: b15e4ea2603da974ab140d758af71173, type: 3}

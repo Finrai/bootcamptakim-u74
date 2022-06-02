@@ -27,7 +27,6 @@ public class StockMarket : MonoBehaviour
         {
             item._price = item._initialPrice;
         }
-
     }
 
     private void Update()
@@ -45,6 +44,8 @@ public class StockMarket : MonoBehaviour
         {
             if(flag == true) 
             {
+                DynamicShopInventory(npcInventories,items);
+
                 randomEvent = PickRandomWorldEvent(worldEvents);
                 randomVillage = PickRandomVillage(villages);
 
@@ -54,7 +55,7 @@ public class StockMarket : MonoBehaviour
                 StartWorldEventForGivenVillage(randomEvent,randomVillage);
                 eventDuration = randomEvent.duration;
 
-                nextEventTime = timeBeforeGameStarted + 30;
+                nextEventTime = timeBeforeGameStarted + 20;
                 flag = false;
             }
 
@@ -66,6 +67,7 @@ public class StockMarket : MonoBehaviour
                 EndWorldEventForGivenVillage(randomEvent,randomVillage);
             }
 
+        
             if(timeBeforeGameStarted > nextEventTime)
             {
                 Invoke("SetFlagTrue",0);
@@ -152,6 +154,61 @@ public class StockMarket : MonoBehaviour
     public void SetFlagTrue()
     {
         flag = true;
+    }
+
+
+    public void DynamicShopInventory(List<PlayerInventory> inventories, List<Item> items) 
+    {
+        for(int i=0; i<inventories.Count; i++) 
+        {
+            // add item 
+
+            int random;
+
+            if(inventories[i].items.Count < inventories[i].maxSize)
+            {
+                for(int k=0; k<Random.Range(0,5); k++) 
+                {
+                    random = Random.Range(0,items.Count);
+
+                    Item item = items[random];
+
+                    if(item._initialPrice < inventories[i].coin)
+                    {
+                        inventories[i].items.Add(item);
+                        inventories[i].coin -= item._initialPrice;
+                    }
+                }
+            }
+
+            // remove item
+
+            for(int j=0; j<Random.Range(0,3); j++)
+            {
+                if(inventories[i].items.Count != 0) 
+                {
+                    random = Random.Range(0,inventories[i].items.Count - 2);
+                    Debug.Log(random);
+
+                    if(inventories[i].items[random] != null) 
+                    {
+                        Item item = inventories[i].items[random];
+                        inventories[i].items.RemoveAt(random);  
+                        inventories[i].coin += item._initialPrice * 1.2f;     
+                    }
+                }
+            }
+
+
+           
+
+            
+
+            
+
+            
+            
+        }
     }
  
 }

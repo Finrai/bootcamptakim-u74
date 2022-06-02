@@ -60,6 +60,10 @@ public class Village : ScriptableObject
         {
             price = swordPriceMultipler;
         }
+        else if(itemType == milk)
+        {
+            price = milkPriceMultipler;
+        }
         else
         {
             return 0;
