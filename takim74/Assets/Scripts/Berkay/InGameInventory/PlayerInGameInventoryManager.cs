@@ -9,14 +9,34 @@ public class PlayerInGameInventoryManager : MonoBehaviour
     public Canvas canvas;
     public DurationSynchronizer durationSynchronizer;
 
+    [SerializeField] List<AudioClip> clips = new List<AudioClip>();
+    private AudioSource audioSource;
+
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
+        for(int i=0; i<transform.childCount; i++) 
+        {
+            transform.GetChild(i).GetComponent<InGameInventoryItemManager>().item = null;
+        }
+
         FillParentGameObjectsWithInventoryItems();
+
+        for(int k=0; k<transform.childCount; k++)
+        {
+            if(transform.GetChild(k).GetComponent<InGameInventoryItemManager>().item != null) 
+            {
+                durationSynchronizer.shopPlayerInventorys[0].transform.GetChild(k).GetComponent<ShopItemManager>().duration = transform.GetChild(k).GetComponent<InGameInventoryItemManager>().item._initialDuration;
+            }
+        }
 
         if(canvas != null)
         {
             canvas.enabled = false;
         }
+
+
 
     }
 
@@ -30,11 +50,17 @@ public class PlayerInGameInventoryManager : MonoBehaviour
         {
             if(canvas.enabled == true) 
             {
+                audioSource.clip = clips[1];
+                audioSource.Play();
+
                 canvas.enabled = false;
                 Cursor.lockState = CursorLockMode.Locked;
             }
             else 
             {
+                audioSource.clip = clips[1];
+                audioSource.Play();
+
                 canvas.enabled = true;
                 Cursor.lockState = CursorLockMode.None;
             }
@@ -89,6 +115,10 @@ public class PlayerInGameInventoryManager : MonoBehaviour
 
     public void DeleteItem() 
     {
+        
+        audioSource.clip = clips[0];
+        audioSource.Play();
+
         var selectedItemIndex = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.transform.GetSiblingIndex();
 
         for(int i=selectedItemIndex; i<playerInventory.maxSize; i++) 
