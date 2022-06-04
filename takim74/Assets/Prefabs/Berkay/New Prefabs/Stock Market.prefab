@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3225460059080586123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3225460059080586125}
+  - component: {fileID: 3225460059080586122}
+  m_Layer: 0
+  m_Name: Stock Market
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3225460059080586125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3225460059080586123}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3225460059080586122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3225460059080586123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 325954e58f235f448af7c851b59af476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
+  - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
+  - {fileID: 11400000, guid: bd21c130f579d314f8700988a6771aa4, type: 2}
+  - {fileID: 11400000, guid: e7c97a64d2c26364682f986b8a3cb2ea, type: 2}
+  - {fileID: 11400000, guid: 603b2c03893219143ba1ec48102e9fe7, type: 2}
+  - {fileID: 11400000, guid: 386fc494ea9656940bf743d022e4e78e, type: 2}
+  - {fileID: 11400000, guid: 11f7a820e3f451948aae3668627e8c29, type: 2}
+  - {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
+  - {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
+  - {fileID: 11400000, guid: a4b674da63c52784abf153e992315bab, type: 2}
+  - {fileID: 11400000, guid: 7a9c958cbfab70f469784b3454db4938, type: 2}
+  npcInventories:
+  - {fileID: 11400000, guid: 3ae5da6d2112a4b4b90403fd43c4bf14, type: 2}
+  - {fileID: 11400000, guid: b2b4b68d9667c8940b42586df75afd37, type: 2}
+  - {fileID: 11400000, guid: 0a3985f5c0a1432499ec0286f9a41814, type: 2}
+  villages:
+  - {fileID: 11400000, guid: 0bd48930df27dbe4b9590df4603d5f75, type: 2}
+  - {fileID: 11400000, guid: 5cc99ad8243223446b6d78b2f7fe6ffe, type: 2}
+  - {fileID: 11400000, guid: 8337e0d9f320f4248bd6ae821bbebe24, type: 2}
+  worldEvents:
+  - {fileID: 11400000, guid: 5d5c97594dda45d4fa0a7c9974241ba4, type: 2}
+  - {fileID: 11400000, guid: 625af8be0c4a3b046ac138a01b330186, type: 2}
+  - {fileID: 11400000, guid: 6c6d3a0c4a7e8d24bbdf957c78f65ba5, type: 2}
+  updatePriceEverySeconds: 15
