@@ -9,9 +9,14 @@ public class PlayerInGameInventoryManager : MonoBehaviour
     public Canvas canvas;
     public DurationSynchronizer durationSynchronizer;
 
+    private bool hasNewspaper = false;
+    public Canvas shopCanvas;
+    public GameObject newspaperImage;
+
+
     [SerializeField] List<AudioClip> clips = new List<AudioClip>();
     private AudioSource audioSource;
-
+    
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -46,6 +51,8 @@ public class PlayerInGameInventoryManager : MonoBehaviour
         FillItemImages();
         CalculateWeight();
 
+        newspaperImage.SetActive(HasNewspaper());
+
         if(Input.GetKeyDown(KeyCode.K) && canvas != null)
         {
             if(canvas.enabled == true) 
@@ -58,11 +65,14 @@ public class PlayerInGameInventoryManager : MonoBehaviour
             }
             else 
             {
-                audioSource.clip = clips[1];
-                audioSource.Play();
+                if(shopCanvas.enabled == false) 
+                {
+                    audioSource.clip = clips[1];
+                    audioSource.Play();
 
-                canvas.enabled = true;
-                Cursor.lockState = CursorLockMode.None;
+                    canvas.enabled = true;
+                    Cursor.lockState = CursorLockMode.None;
+                }
             }
         }
     }
@@ -138,4 +148,21 @@ public class PlayerInGameInventoryManager : MonoBehaviour
 
         playerInventory.items.RemoveAt(selectedItemIndex);
     }
+
+    public bool HasNewspaper() 
+    {
+        hasNewspaper = false;
+
+        foreach(Item item in playerInventory.items)
+        {
+            if(item._name == "Newspaper") 
+            {
+                hasNewspaper = true;
+            }
+        }
+
+
+        return hasNewspaper;
+    }
+
 }

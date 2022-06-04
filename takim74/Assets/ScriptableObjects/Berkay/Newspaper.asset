@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5996658ed530584281cf3ff4b802a5e, type: 3}
+  m_Name: Newspaper
+  m_EditorClassIdentifier: 
+  _initialPrice: 0
+  _price: 0
+  _initialDuration: 260
+  _weight: 0
+  _name: Newspaper
+  _sprite: {fileID: 9062237868407575969, guid: b15e4ea2603da974ab140d758af71173, type: 3}

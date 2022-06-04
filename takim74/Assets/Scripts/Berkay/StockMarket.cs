@@ -44,6 +44,7 @@ public class StockMarket : MonoBehaviour
         {
             if(flag == true) 
             {
+                
                 DynamicShopInventory(npcInventories,items);
 
                 randomEvent = PickRandomWorldEvent(worldEvents);
@@ -188,7 +189,7 @@ public class StockMarket : MonoBehaviour
                 if(inventories[i].items.Count != 0) 
                 {
                     random = Random.Range(0,inventories[i].items.Count - 2);
-                    Debug.Log(random);
+                    
 
                     if(inventories[i].items[random] != null) 
                     {
@@ -198,19 +199,8 @@ public class StockMarket : MonoBehaviour
                     }
                 }
             }
-
-
-           
-
-            
-
-            
-
-            
-            
         }
     }
- 
 }
 
 

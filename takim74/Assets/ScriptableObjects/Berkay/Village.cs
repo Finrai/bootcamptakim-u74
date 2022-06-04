@@ -15,6 +15,7 @@ public class Village : ScriptableObject
     public Item greenPotion;    public float greenPotionPriceMultipler;
     public Item cheese;         public float cheesePriceMultipler;
     public Item sword;          public float swordPriceMultipler;
+    public Item newspaper;      public float newspaperPriceMultipler;
 
     private float nullNumber;
 
@@ -63,6 +64,10 @@ public class Village : ScriptableObject
         else if(itemType == milk)
         {
             price = milkPriceMultipler;
+        }
+        else if(itemType == newspaper) 
+        {
+            price = newspaperPriceMultipler;
         }
         else
         {

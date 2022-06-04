@@ -12,18 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2176a2426f8d8ba47ba59e82062506e2, type: 3}
   m_Name: Inventory
   m_EditorClassIdentifier: 
-  coin: 10
+  coin: 44402.05
   maxSize: 40
   maxWeight: 40
   items:
+  - {fileID: 11400000, guid: 603b2c03893219143ba1ec48102e9fe7, type: 2}
+  - {fileID: 11400000, guid: e7c97a64d2c26364682f986b8a3cb2ea, type: 2}
+  - {fileID: 11400000, guid: 11f7a820e3f451948aae3668627e8c29, type: 2}
+  - {fileID: 11400000, guid: 11f7a820e3f451948aae3668627e8c29, type: 2}
+  - {fileID: 11400000, guid: 386fc494ea9656940bf743d022e4e78e, type: 2}
   - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  currentWeight: 100
+  - {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
+  - {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
+  - {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
+  - {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
+  - {fileID: 11400000, guid: 7a9c958cbfab70f469784b3454db4938, type: 2}
+  currentWeight: 75
