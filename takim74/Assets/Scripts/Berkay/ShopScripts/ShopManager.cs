@@ -12,6 +12,12 @@ public class ShopManager : MonoBehaviour
 
     public GameObject playerShopInventory;
     public GameObject npcShopInventory;
+    public GameObject audioSources;
+   
+    private void Start()
+    {
+        audioSources = transform.parent.parent.transform.GetChild(0).gameObject;
+    }
 
     public void GetSelectedItem()
     {
@@ -66,11 +72,12 @@ public class ShopManager : MonoBehaviour
     }
 
     public void PurchaseItem()
-    {
+    {   
         GetSelectedItem();
 
         if(CheckIfPlayerCoinEnoughToPurchase() == true && CheckIfHasEnoughSpace(playerInventory))
         {
+            BuyItemSound();
             CoinManagerBuy();
             AddItemToPlayerInventory();
             SetItemDurationBuy();
@@ -125,6 +132,7 @@ public class ShopManager : MonoBehaviour
 
         if(CheckIfPlayerInventoryHasSelectedItem() == true && CheckIfHasEnoughSpace(NPCInventory))
         {
+            SellItemSound();
             CoinManagerSell();
             AddItemToNPCInventory();
             DeleteSelectedItemFromInventory();
@@ -139,7 +147,7 @@ public class ShopManager : MonoBehaviour
         = playerInventory.items[playerInventory.items.Count -1 ]._initialDuration;
     }
 
-     public void SetItemDurationSell()
+    public void SetItemDurationSell()
     {
        npcShopInventory.transform.GetChild(NPCInventory.items.Count -1).GetComponent<ShopItemManager>().duration = 
 
@@ -157,6 +165,23 @@ public class ShopManager : MonoBehaviour
                Debug.Log("last item");
            }
         }
+    }
+
+    public void BuyItemSound() 
+    {
+        AudioSource gold_slack = audioSources.transform.GetChild(0).transform.GetComponent<AudioSource>();
+        AudioSource randomNpcSound = audioSources.transform.GetChild(Random.Range(1,3)).transform.GetComponent<AudioSource>();
+        gold_slack.Play();
+        randomNpcSound.Play();
+    }
+
+    public void SellItemSound()
+    {
+        AudioSource gold_slack = audioSources.transform.GetChild(0).transform.GetComponent<AudioSource>();
+        AudioSource randomSellSou = audioSources.transform.GetChild(Random.Range(3,5)).transform.GetComponent<AudioSource>();
+
+        gold_slack.Play();
+        randomSellSou.Play();
     }
 
 }

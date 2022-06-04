@@ -12,13 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2176a2426f8d8ba47ba59e82062506e2, type: 3}
   m_Name: Inventory
   m_EditorClassIdentifier: 
-  coin: 51491.75
+  coin: 14123.736
   maxSize: 40
   maxWeight: 40
-  items:
-  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
-  - {fileID: 11400000, guid: e5e49b28ae849be468717e9d44e2b1a6, type: 2}
-  currentWeight: 48
+  items: []
+  currentWeight: 0
