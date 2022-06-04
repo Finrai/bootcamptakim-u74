@@ -83,6 +83,10 @@ public class ShopManager : MonoBehaviour
             SetItemDurationBuy();
             DeleteSelectedItemFromNPCInventory();
         }
+        else
+        {
+            DeniedSound();
+        }
     }
 
     // sell item
@@ -138,6 +142,10 @@ public class ShopManager : MonoBehaviour
             DeleteSelectedItemFromInventory();
             SetItemDurationSell();
         }
+        else
+        {
+            DeniedSound();
+        }
     }
 
     public void SetItemDurationBuy()
@@ -182,6 +190,12 @@ public class ShopManager : MonoBehaviour
 
         gold_slack.Play();
         randomSellSou.Play();
+    }
+
+    public void DeniedSound()
+    {
+         AudioSource denied = audioSources.transform.GetChild(11).transform.GetComponent<AudioSource>();
+         denied.Play();
     }
 
 }
