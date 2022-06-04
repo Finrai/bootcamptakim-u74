@@ -16,12 +16,27 @@ public class PlayerInGameInventoryManager : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
 
+        for(int i=0; i<transform.childCount; i++) 
+        {
+            transform.GetChild(i).GetComponent<InGameInventoryItemManager>().item = null;
+        }
+
         FillParentGameObjectsWithInventoryItems();
+
+        for(int k=0; k<transform.childCount; k++)
+        {
+            if(transform.GetChild(k).GetComponent<InGameInventoryItemManager>().item != null) 
+            {
+                durationSynchronizer.shopPlayerInventorys[0].transform.GetChild(k).GetComponent<ShopItemManager>().duration = transform.GetChild(k).GetComponent<InGameInventoryItemManager>().item._initialDuration;
+            }
+        }
 
         if(canvas != null)
         {
             canvas.enabled = false;
         }
+
+
 
     }
 
@@ -45,7 +60,7 @@ public class PlayerInGameInventoryManager : MonoBehaviour
             {
                 audioSource.clip = clips[1];
                 audioSource.Play();
-                
+
                 canvas.enabled = true;
                 Cursor.lockState = CursorLockMode.None;
             }
