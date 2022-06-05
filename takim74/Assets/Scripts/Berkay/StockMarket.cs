@@ -9,6 +9,8 @@ public class StockMarket : MonoBehaviour
     public List<Village> villages = new List<Village>();
     public List<WorldEvent> worldEvents = new List<WorldEvent>();    
 
+    public List<GameObject> soldiers = new List<GameObject>();
+
     bool flag = true;
     float eventDuration;
     float timeBeforeGameStarted;
@@ -40,7 +42,7 @@ public class StockMarket : MonoBehaviour
             deltaPriceRandomizer(items);
         }
 
-        if(timeBeforeGameStarted > 10f)
+        if(timeBeforeGameStarted > 180f)
         {
             if(flag == true) 
             {
@@ -53,10 +55,15 @@ public class StockMarket : MonoBehaviour
                 Debug.Log(randomEvent);
                 Debug.Log(randomVillage);
 
+                if(randomEvent.name == "War")
+                {
+                    soldiers[ReturnVillageIndex(randomVillage)].SetActive(true);
+                }
+
                 StartWorldEventForGivenVillage(randomEvent,randomVillage);
                 eventDuration = randomEvent.duration;
 
-                nextEventTime = timeBeforeGameStarted + 20;
+                nextEventTime = timeBeforeGameStarted + 60;
                 flag = false;
             }
 
@@ -65,6 +72,12 @@ public class StockMarket : MonoBehaviour
             if(eventDuration < 0 && flag == false) 
             {
                 eventDuration = 0;
+
+                if(soldiers[ReturnVillageIndex(randomVillage)].activeInHierarchy == true)
+                {
+                     soldiers[ReturnVillageIndex(randomVillage)].SetActive(false);
+                }
+                
                 EndWorldEventForGivenVillage(randomEvent,randomVillage);
             }
 
@@ -200,6 +213,19 @@ public class StockMarket : MonoBehaviour
                 }
             }
         }
+    }
+
+    public int ReturnVillageIndex(Village village)  
+    {
+        for(int i=0; i<villages.Count; i++) 
+        {
+            if(village.name == villages[i].name)
+            {
+                return i;
+            }
+        }
+
+        return -1;
     }
 }
 

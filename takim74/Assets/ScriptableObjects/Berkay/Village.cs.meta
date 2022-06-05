@@ -14,6 +14,7 @@ MonoImporter:
   - greenPotion: {fileID: 11400000, guid: 386fc494ea9656940bf743d022e4e78e, type: 2}
   - cheese: {fileID: 11400000, guid: bd21c130f579d314f8700988a6771aa4, type: 2}
   - sword: {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
+  - newspaper: {fileID: 11400000, guid: 7a9c958cbfab70f469784b3454db4938, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
