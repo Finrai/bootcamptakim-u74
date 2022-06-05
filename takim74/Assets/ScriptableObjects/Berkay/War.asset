@@ -15,6 +15,6 @@ MonoBehaviour:
   items:
   - {fileID: 11400000, guid: 32b30449a1e4423439e0a1b0cc95eefc, type: 2}
   priceMultiplier: 5
-  duration: 30
+  duration: 200
   initialPriceses:
   - 5

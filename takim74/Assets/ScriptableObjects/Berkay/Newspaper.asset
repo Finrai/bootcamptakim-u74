@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _initialPrice: 0
   _price: 0
-  _initialDuration: 260
+  _initialDuration: 0
   _weight: 0
   _name: Newspaper
   _sprite: {fileID: 9062237868407575969, guid: b15e4ea2603da974ab140d758af71173, type: 3}

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5996658ed530584281cf3ff4b802a5e, type: 3}
   m_Name: Yellow Potion
   m_EditorClassIdentifier: 
-  _initialPrice: 50
-  _price: 47.471855
-  _initialDuration: 20
-  _weight: 20
+  _initialPrice: 20
+  _price: 20
+  _initialDuration: 300
+  _weight: 10
   _name: Yellow Potion
   _sprite: {fileID: 1921086633527444709, guid: b15e4ea2603da974ab140d758af71173, type: 3}

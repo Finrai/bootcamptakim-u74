@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Blue Potion
   m_EditorClassIdentifier: 
   _initialPrice: 20
-  _price: 19.962524
-  _initialDuration: 100
+  _price: 20
+  _initialDuration: 300
   _weight: 10
   _name: Blue Potion
   _sprite: {fileID: -2391509638931082882, guid: b15e4ea2603da974ab140d758af71173, type: 3}

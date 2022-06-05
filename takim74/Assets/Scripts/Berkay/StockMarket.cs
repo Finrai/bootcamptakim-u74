@@ -50,7 +50,7 @@ public class StockMarket : MonoBehaviour
             deltaPriceRandomizer(items);
         }
 
-        if(timeBeforeGameStarted > 10f)
+        if(timeBeforeGameStarted > 180f)
         {
             if(flag == true) 
             {
@@ -72,7 +72,7 @@ public class StockMarket : MonoBehaviour
                 StartWorldEventForGivenVillage(randomEvent,randomVillage);
                 eventDuration = randomEvent.duration;
 
-                nextEventTime = timeBeforeGameStarted + 80;
+                nextEventTime = timeBeforeGameStarted + 90;
                 flag = false;
 
             }

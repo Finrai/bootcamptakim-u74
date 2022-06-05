@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - {fileID: 11400000, guid: e7c97a64d2c26364682f986b8a3cb2ea, type: 2}
-  priceMultiplier: 3
-  duration: 30
+  priceMultiplier: 4
+  duration: 200
   initialPriceses:
   - 0.5
