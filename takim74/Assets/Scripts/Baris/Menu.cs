@@ -51,12 +51,22 @@ public class Menu : MonoBehaviour
             UpdateResLabel();
         }
     }
+
+    public void mainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     //yükleme
     public void aboutButton()
     {
         game[2].SetActive(true);
         game[0].SetActive(false);
     }
+
+
+    
+
     //ayarlar
     public void Settings()
     {
