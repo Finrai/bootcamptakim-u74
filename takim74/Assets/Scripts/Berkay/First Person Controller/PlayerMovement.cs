@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     void MovePlayer()
     {
         moveDirection = (transform.right * horizontalMovement) + (transform.forward * verticalMovement);
-        controller.Move(moveDirection * moveSpeed);
+        controller.Move(moveDirection * moveSpeed * Time.deltaTime);
     }
     void Gravity()
     {

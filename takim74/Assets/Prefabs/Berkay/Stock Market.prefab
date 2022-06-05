@@ -24,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6604332657986470859}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325954e58f235f448af7c851b59af476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 11400000, guid: f7f00a582ffb21d4fb038c1ebdf4ae37, type: 2}
   items:
   - {fileID: 11400000, guid: e50230664a79f594eaf0bcdbc8c21872, type: 2}
   - {fileID: 11400000, guid: 9123b6449b0a9fc4a904ee509f17ce7e, type: 2}
@@ -56,14 +57,24 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a4b674da63c52784abf153e992315bab, type: 2}
   npcInventories:
   - {fileID: 11400000, guid: 3ae5da6d2112a4b4b90403fd43c4bf14, type: 2}
-  - {fileID: 11400000, guid: b2b4b68d9667c8940b42586df75afd37, type: 2}
   - {fileID: 11400000, guid: 0a3985f5c0a1432499ec0286f9a41814, type: 2}
+  - {fileID: 11400000, guid: b2b4b68d9667c8940b42586df75afd37, type: 2}
+  - {fileID: 11400000, guid: 927f6145efd81824381eff7c7208b10d, type: 2}
+  - {fileID: 11400000, guid: de37b2374b99110489d13b21232fec8f, type: 2}
   villages:
-  - {fileID: 11400000, guid: 0bd48930df27dbe4b9590df4603d5f75, type: 2}
-  - {fileID: 11400000, guid: 5cc99ad8243223446b6d78b2f7fe6ffe, type: 2}
   - {fileID: 11400000, guid: 8337e0d9f320f4248bd6ae821bbebe24, type: 2}
+  - {fileID: 11400000, guid: 5cc99ad8243223446b6d78b2f7fe6ffe, type: 2}
+  - {fileID: 11400000, guid: d24ed7a420556584dbcba22cf52fda99, type: 2}
+  - {fileID: 11400000, guid: 0bd48930df27dbe4b9590df4603d5f75, type: 2}
+  - {fileID: 11400000, guid: 0fcfded637270ee428096b44a8b341a9, type: 2}
   worldEvents:
   - {fileID: 11400000, guid: 5d5c97594dda45d4fa0a7c9974241ba4, type: 2}
   - {fileID: 11400000, guid: 625af8be0c4a3b046ac138a01b330186, type: 2}
   - {fileID: 11400000, guid: 6c6d3a0c4a7e8d24bbdf957c78f65ba5, type: 2}
+  soldiers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   updatePriceEverySeconds: 15

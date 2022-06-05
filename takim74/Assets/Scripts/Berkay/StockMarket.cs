@@ -1,26 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class StockMarket : MonoBehaviour
 {
+    public PlayerInventory playerInventory;
+
     public List<Item> items = new List<Item>();
     public List<PlayerInventory> npcInventories = new List<PlayerInventory>();
     public List<Village> villages = new List<Village>();
+    
     public List<WorldEvent> worldEvents = new List<WorldEvent>();    
-
     public List<GameObject> soldiers = new List<GameObject>();
 
-    bool flag = true;
-    float eventDuration;
+   [HideInInspector]  public bool flag = true;
+    [HideInInspector] public float eventDuration;
     float timeBeforeGameStarted;
     float nextEventTime;
 
     float updatePriceTimer=0;
     public float updatePriceEverySeconds;
 
-    Village randomVillage;
-    WorldEvent randomEvent;
+    [HideInInspector] public Village randomVillage;
+   [HideInInspector]  public WorldEvent randomEvent;
 
 
     private void Start()
@@ -28,6 +31,11 @@ public class StockMarket : MonoBehaviour
         foreach(Item item in items)
         {
             item._price = item._initialPrice;
+        }
+
+        foreach(GameObject obj in soldiers) 
+        {
+            obj.SetActive(false);
         }
     }
 
@@ -42,7 +50,7 @@ public class StockMarket : MonoBehaviour
             deltaPriceRandomizer(items);
         }
 
-        if(timeBeforeGameStarted > 180f)
+        if(timeBeforeGameStarted > 10f)
         {
             if(flag == true) 
             {
@@ -58,13 +66,15 @@ public class StockMarket : MonoBehaviour
                 if(randomEvent.name == "War")
                 {
                     soldiers[ReturnVillageIndex(randomVillage)].SetActive(true);
+                    Debug.Log("war time");
                 }
 
                 StartWorldEventForGivenVillage(randomEvent,randomVillage);
                 eventDuration = randomEvent.duration;
 
-                nextEventTime = timeBeforeGameStarted + 60;
+                nextEventTime = timeBeforeGameStarted + 80;
                 flag = false;
+
             }
 
             eventDuration -= Time.deltaTime;
@@ -77,10 +87,9 @@ public class StockMarket : MonoBehaviour
                 {
                      soldiers[ReturnVillageIndex(randomVillage)].SetActive(false);
                 }
-                
+
                 EndWorldEventForGivenVillage(randomEvent,randomVillage);
             }
-
         
             if(timeBeforeGameStarted > nextEventTime)
             {

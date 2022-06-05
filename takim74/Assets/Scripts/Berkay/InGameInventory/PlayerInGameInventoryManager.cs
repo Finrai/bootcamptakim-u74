@@ -9,7 +9,6 @@ public class PlayerInGameInventoryManager : MonoBehaviour
     public Canvas canvas;
     public DurationSynchronizer durationSynchronizer;
 
-    private bool hasNewspaper = false;
     public List<Canvas> canvases = new List<Canvas>();
 
 
@@ -144,22 +143,6 @@ public class PlayerInGameInventoryManager : MonoBehaviour
 
 
         playerInventory.items.RemoveAt(selectedItemIndex);
-    }
-
-    public bool HasNewspaper() 
-    {
-        hasNewspaper = false;
-
-        foreach(Item item in playerInventory.items)
-        {
-            if(item._name == "Newspaper") 
-            {
-                hasNewspaper = true;
-            }
-        }
-
-
-        return hasNewspaper;
     }
 
     public bool CheckIfShopIsOpen()
