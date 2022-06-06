@@ -1,8 +1,53 @@
 fileFormatVersion: 2
-guid: 012927a382facf54381ab5dcce875760
+guid: 1da129d1973eafd429eef6add1c74d98
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -5755876124362903034
+    second: Cube.004|Cube.004Action
+  - first:
+      74: -312195316171472361
+    second: Cube.004|Cube.004Action.001
+  - first:
+      74: 2104699228221125760
+    second: Cube.004|Cube.004Action.002
+  - first:
+      74: -3243783463967021143
+    second: Cube.004|Cube.004Action.003
+  - first:
+      74: -444488191891936848
+    second: Cube.004|Cube.004Action.004
+  - first:
+      74: 2205285549296652560
+    second: Cube.004|Cube.004Action.005
+  - first:
+      74: -2679925236263475434
+    second: Cube.004|Cube.004Action.006
+  - first:
+      74: -3580339347251089134
+    second: Cube.004|Cube.004Action.007
+  - first:
+      74: 1618357335010424195
+    second: Cube.004|Cube.011Action
+  - first:
+      74: -4225997760743007519
+    second: Cube.004|Cube.011Action.001
+  - first:
+      74: -9048797270882054174
+    second: Cube.004|Cube.011Action.002
+  - first:
+      74: -1829741092848788308
+    second: Cube.004|Cube.011Action.003
+  - first:
+      74: 946145404758532432
+    second: Cube.004|metarig.002Action
+  - first:
+      74: 3039717315140516995
+    second: Cube.004|Plane.003Action
+  - first:
+      74: -5710815930346834194
+    second: Cube.004|Plane.015Action
   externalObjects: {}
   materials:
     materialImportMode: 2
