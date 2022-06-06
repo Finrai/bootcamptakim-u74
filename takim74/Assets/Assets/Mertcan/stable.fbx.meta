@@ -48,7 +48,12 @@ ModelImporter:
   - first:
       74: -5710815930346834194
     second: Cube.004|Plane.015Action
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.022
+    second: {fileID: 2100000, guid: ab37a2d1f4962dd42963a2a8d94fac8a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -79,7 +84,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.4
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -130,7 +135,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.004
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
