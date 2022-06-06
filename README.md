@@ -144,7 +144,7 @@ Backlog düzeni: Ürün Backlog'unda oyunun story'lerinin ve özelliklerinin det
 ________________________________________________________
 Daily Scrum: Daily Scrum toplantılarının Discord ve Whatsapp üzerinden gerçekleştirilmesi kararı alınmıştır. Gerçekleşen toplantılar text ve yayın konuşmaları şeklindedir.
 Daily Scrum görüşmelerinin örneği ektedir.
-- [Sprint 3 Görüşme Kayıtları ](https://github.com/Finrai/bootcamptakim-u74/files/8843807/Takim-74.DailyScrumMeetingNotesSprint3.docx)
+- [Sprint 3 Görüşme Kayıtları](https://github.com/Finrai/bootcamptakim-u74/files/8844803/Takim-74.DailyScrumMeetingNotesSprint3.docx)
 
 
 
@@ -182,6 +182,7 @@ Bunun yanı sıra reklam butonu eklenmesine karar verilmiştir.
 __________________________________________________________________________
 Sprint Retrospective :
 Proje üç sprint uzunluğunda olduğu için bu son retrospective toplantısında proje genel olarak ele alınmış ve değerlendirilmiştir.
+Son sprintte yapılan işler ana sahneye entegre edileceği için; proje hasarı kazalarına engel olmak adına aynı sahnede aynı zamanda çalışmamak üzere özen gösterilmiştir.
 
 TAKIM ÜYELERİNİN PROJE HAKKINDA YORUMLARI 
 - [Proje ve Takım Değerlendirme Panosu ](https://miro.com/app/board/uXjVOvNcx6I=/?share_link_id=733089466640)
