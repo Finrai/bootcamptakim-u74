@@ -24,10 +24,36 @@ public class HorseController : MonoBehaviour
     public Transform onHorseTransform;
 
 
+    private CharacterController characterController;
+
+    private Animator animator;
+
+    private bool moving;
+
+    /// <summary>
+    /// Start is called on the frame when a script is enabled just before
+    /// any of the Update methods is called the first time.
+    /// </summary>
+    private void Start()
+    {
+        characterController = GetComponent<CharacterController>();
+        //animator = GetComponent<Animator>();
+    }
+
+
     
     private void Update()
     {
-        Debug.Log(triggered);
+        /*if(characterController.velocity.z > Mathf.Abs(0.01f) || characterController.velocity.x >  Mathf.Abs(0.01f))
+        {
+            moving = true;
+        }
+        else
+        {
+            moving = false;
+        }
+
+        animator.SetBool("isWalking",moving);*/
 
         if(triggered && Input.GetKeyDown(KeyCode.R) && onHorse == false)
         {
