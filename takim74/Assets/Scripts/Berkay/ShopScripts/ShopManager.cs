@@ -75,7 +75,7 @@ public class ShopManager : MonoBehaviour
     {   
         GetSelectedItem();
 
-        if(CheckIfPlayerCoinEnoughToPurchase() == true && CheckIfHasEnoughSpace(playerInventory))
+        if(CheckIfPlayerCoinEnoughToPurchase() == true && CheckIfHasEnoughSpace(playerInventory) && HasEnoughWeight())
         {
             BuyItemSound();
             CoinManagerBuy();
@@ -196,6 +196,18 @@ public class ShopManager : MonoBehaviour
     {
          AudioSource denied = audioSources.transform.GetChild(11).transform.GetComponent<AudioSource>();
          denied.Play();
+    }
+
+    public bool HasEnoughWeight() 
+    {
+        if(selectedItem.item._weight + playerInventory.currentWeight > playerInventory.maxWeight)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 
 }
