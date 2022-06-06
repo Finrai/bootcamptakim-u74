@@ -35,7 +35,7 @@ public class MouseLook : MonoBehaviour
     void VerticalLook()
     {
         verticalRotation -= mouseY;
-        verticalRotation = Mathf.Clamp(verticalRotation,-90f, 90f); 
+        verticalRotation = Mathf.Clamp(-90f, verticalRotation, 90f); 
         transform.localRotation = Quaternion.Euler(verticalRotation, 0f, 0f);
     }
 }
