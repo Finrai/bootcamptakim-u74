@@ -7,25 +7,23 @@ public class HorseNPC : MonoBehaviour
 {
     NavMeshAgent agent;
     public GameObject[] target;
-    int currentTarget;
+    public GameObject lookat;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        currentTarget = 0;
-        agent.SetDestination(target[currentTarget].transform.position);
+        
+        agent.SetDestination(target[0].transform.position);
     }
 
     // Update is called once per frame
     void Update()
     {
+        transform.LookAt(target[0].transform.position);
+        
+        agent.SetDestination(target[0].transform.position);
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        currentTarget = 0;
-        agent.SetDestination(target[currentTarget].transform.position);
-    }
 }
