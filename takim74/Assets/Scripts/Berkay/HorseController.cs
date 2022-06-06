@@ -37,14 +37,14 @@ public class HorseController : MonoBehaviour
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
 
     
     private void Update()
     {
-        /*if(characterController.velocity.z > Mathf.Abs(0.01f) || characterController.velocity.x >  Mathf.Abs(0.01f))
+        if(characterController.velocity.z > Mathf.Abs(0.01f) || characterController.velocity.x >  Mathf.Abs(0.01f))
         {
             moving = true;
         }
@@ -53,7 +53,7 @@ public class HorseController : MonoBehaviour
             moving = false;
         }
 
-        animator.SetBool("isWalking",moving);*/
+        animator.SetBool("isWalking",moving);
 
         if(triggered && Input.GetKeyDown(KeyCode.R) && onHorse == false)
         {
